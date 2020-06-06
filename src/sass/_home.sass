@@ -1,0 +1,235 @@
+// AJAX SEARCH
+#ajax-search
+  .container-fluid
+      padding: 0
+#ajax-search-bar
+  padding: 30px 0
+  #btn-ajax
+    outline: none
+    color: $white-color !important
+    background-color: rgba(189,0,69, 1)
+    border: 2px solid $white-color
+    border-radius: 5px
+    margin-left: 10px
+    padding: 10px 10px
+    display: inline-block
+    text-decoration: none
+    input
+      border-radius: 5px
+
+.section-title
+    border-bottom: none
+
+@media only screen and (min-width: 768px)
+  #ajax-search-bar
+    width: 670px
+    margin: 0 auto
+
+#site-home-search-filters-first
+  .tab-pane
+    a
+      border-radius: 5px
+      text-transform: uppercase
+      color: $white-color !important
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
+  #site-home-search-filters-first
+    .tab-pane
+      .row
+        display: block !important
+        column-count: 2
+
+@media only screen and (min-width: 767px) and (max-width: 992px)
+  #site-home-search-filters-first
+    .tab-pane
+      .row
+        flex-direction: row
+
+#site-home-search-filters-secondary
+  a.btn-itixy
+    display: block
+    padding: .5rem 1rem
+
+.hot-event, .month-event, .magazine-unit, .art-thumb
+  border: $dark-purple-border
+  border-radius: 5px
+  background-size: 100% 100%
+  background-repeat: no-repeat
+
+// HOT EVENTS
+.hot-event
+  height: 195px
+  position: relative
+  margin-right: 10px
+  a.btn-itixy
+    display: inline-block
+    position: absolute
+    bottom: 0
+    right: 0
+    padding: 20px
+    background-color: rgba(189,0,69, 1)
+
+.hot-event-big
+  height: 400px
+  background-image: url(../img/music-big.jpg)
+
+.hot-event-small:nth-child(1)
+  margin-bottom: 10px
+  background-image: url(../img/music-small-1.jpg)
+
+.hot-event-small:nth-child(2)
+  background-image: url(../img/music-small-2.jpg)
+
+@media only screen and (max-width: 320px)
+  .hot-event-big
+    height: 300px
+    .btn-itixy
+      padding: 10px !important
+  .hot-event-small
+    height: 150px
+    .btn-itixy
+      padding: 10px !important
+
+@media only screen and (min-width: 321px) and (max-width: 375px)
+  .hot-event-big
+    height: 300px
+    a
+      padding: 10px
+    .btn-itixy
+      padding: 10px !important
+
+  .hot-event-small
+    height: 150px
+    a
+      padding: 10px
+    .btn-itixy
+      padding: 10px !important
+
+
+@media only screen and (min-width: 376px) and (max-width: 766px)
+  .hot-event-big
+    height: 450px
+  .hot-event-small
+    height: 220px
+
+@media only screen and (max-width: 767px)
+  .hot-event-big
+    margin-right: 0
+    margin-bottom: 10px
+  .hot-event-small
+    margin-right: 0
+    &:last-child
+      margin-bottom: 10px
+
+@media only screen and (min-width: 768px)
+  #hot-events
+    .row
+      .hot-event-small
+        margin-right: 0
+    .section-nav
+      margin-top: 10px
+
+// MONTH'S FAVORITE
+.month-event
+    min-height: 200px
+    margin: 5px
+    h3
+      font-size: 14px
+
+.month-unit-1
+  background-image: url(../img/event-1.jpg)
+
+.month-unit-2
+  background-image: url(../img/event-2.jpg)
+
+.month-unit-3
+  background-image: url(../img/event-3.jpg)
+
+.month-unit-4
+  background-image: url(../img/event-4.jpg)
+
+@media only screen and (max-width: 320px)
+  .month-event
+    min-height: 150px
+
+@media only screen and (min-width: 321px) and (max-width: 375px)
+  .month-event
+    min-height: 150px
+
+// SITE MAGAZINE
+#site-magazine
+  .section-link
+    a
+      padding-top: 0 !important
+
+.magazine-unit
+  background: $white-color
+  margin-bottom: 10px
+  margin-right: 10px
+  min-height: 150px
+  overflow: hidden
+  img
+    float: left
+  h3
+    margin-top: 10px
+    font-size: 1.5em
+  h4
+    font-size: 1em
+    color: #000
+
+@media only screen and (min-width: 992px)
+  .magazine-unit h3
+    margin-top: 30px
+
+@media only screen and (max-width: 991px)
+  .magazine-unit
+    img
+      float: none
+      margin-top: 10px
+      width: 85%
+
+@media only screen and (max-width: 767px)
+  .magazine-unit
+    margin-right: 0
+
+// ART CORNER
+#art-thumb-unit
+  min-height: 220px
+  position: relative
+  h5
+    color: $white-color
+    font-weight: bold
+    text-tranform: uppercase
+
+.art-overlay
+  background: rgba(200,0,0, .2)
+  display: block
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+
+.art-thumb
+  background-position: center center
+  min-height: 250px
+  margin: 5px
+
+.art-unit-1
+  background-image: url(../img/art-corner-1.jpg)
+
+.art-unit-2
+  background-image: url(../img/art-corner-2.jpg)
+
+.art-unit-3
+  background-image: url(../img/art-corner-3.jpg)
+
+.art-unit-4
+  background-image: url(../img/art-corner-4.jpg)
+
+@media only screen and (max-width: 320px)
+  .art-thumb
+    min-height: 150px
+
+@media only screen and (min-width: 321px) and (max-width: 375px)
+  .art-thumb
+    min-height: 150px

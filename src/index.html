@@ -1,24 +1,264 @@
-<partial src="header.html"></partial>
+  <main>
+    <!-- container for the #overlay-body background -->
+    <div id="overlay-body">
+      <!-- container for the .overlay-inner -->
+      <div class="overlay-inner">
 
-<div class="jumbotron bg-white text-center justify-content-center align-items-center mb-0">
-  <div class="container">
-    <h1 class="display-3">Bootstrap 4.5.0. boilerplate with Gulp 4.0.2 and HTML5</h1>
-    <p class="lead">Bootstrap 4.5.0. boilerplate with Gulp 4.0.2 and HTML5, cross-env, SaSS, sourcemaps, concat, CSS & HTML minification, uglify, image optimization, template partials, BrowserSync, ready for deployment.</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
-    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365451-d20e00c0ed23?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-    </div>
-    <div class="col-md-4">
-      <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365437-9f9d275b0db0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-    </div>
-    <div class="col-md-4">
-      <img class="img-fluid"  src="https://images.unsplash.com/photo-1579033060982-1bb5b083f4fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-    </div>
-  </div>
-</div>
+        <!-- AJAX SEARCH AREA -->
+        <div id="ajax-search">
+          <div class="container">
+            <div id="ajax-search-bar">
+              <form action="#">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Your search">
+                  <div class="input-group-append">
+                    <a id="btn-ajax" href="searchResults.html">Search</a>
+                  </div>
+                </div>
+              </form>
+            </div>
 
-<partial src="footer.html"></partial>
+            <!-- SECTION BOTTOM NAVBAR  -->
+            <div class="section-nav" id="site-home-search-filters-first">
+              <div class="container-fluid text-center">
+                <ul class="nav nav-pills mb-3 row" id="pills-home-tab" role="tablist">
+                  <li class="nav-item col-sm-12 col-md-6 col-lg-3">
+                    <a class="nav-link btn-itixy" id="pills-home-category-tab" data-toggle="pill" href="#pills-home-category" role="tab" aria-controls="pills-home-category" aria-selected="false">Category</a>
+                  </li>
+                  <li class="nav-item col-sm-12 col-md-6 col-lg-3">
+                    <a class="nav-link btn-itixy" id="pills-home-subcategory-tab" data-toggle="pill" href="#pills-home-subcategory" role="tab" aria-controls="pills-home-subcategory" aria-selected="false">Subcategory</a>
+                  </li>
+                  <li class="nav-item col-sm-12 col-md-6 col-lg-3">
+                    <a class="nav-link active btn-itixy" id="pills-home-city-tab" data-toggle="pill" href="#pills-home-city" role="tab" aria-controls="pills-home-city" aria-selected="false">City</a>
+                  </li>
+                  <li class="nav-item col-sm-12 col-md-6 col-lg-3">
+                    <a class="nav-link btn-itixy" id="pills-home-dates-tab" data-toggle="pill" href="#pills-home-dates" role="tab" aria-controls="pills-home-dates" aria-selected="false">Dates</a>
+                  </li>
+                </ul>
+                <div class="tab-content text-center" id="pills-tabContent">
+                  <!-- category tab -->
+                  <div class="tab-pane fade" id="pills-home-category" role="tabpanel" aria-labelledby="pills-home-category-tab">...</div>
+                  <!-- subcategory tab -->
+                  <div class="tab-pane fade" id="pills-home-subcategory" role="tabpanel" aria-labelledby="pills-home-subcategory-tab">...</div>
+                  <!-- city tab -->
+                  <div class="tab-pane fade show active" id="pills-home-city" role="tabpanel" aria-labelledby="pills-home-city-tab">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Sofia</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Plovdiv</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Varna</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Bourgas</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Ruse</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Stara Zagora</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Pleven</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Dobrich</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Sliven</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Shumen</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Pernik</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Haskovo</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Yambol</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Pazardzhik</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Blogoevgrad</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Veliko Tarnovo</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Vratsa</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Gabrovo</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Asenovgrad</a></div>
+                      <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Vidin</a></div>
+                    </div>
+                  </div>
+                  <!-- dates tab -->
+                  <div class="tab-pane fade" id="pills-home-dates" role="tabpanel" aria-labelledby="pills-home-dates-tab">
+
+                    <div class="dateRangeCalendarWrapper container">
+                      <div class="selected-date-area">
+                        <span></span>
+                      </div>
+                      <select id="dateRangeMonthPicker">
+                          <option value="0">January</option>
+                          <option value="1">February</option>
+                          <option value="2">March</option>
+                          <option value="3">April</option>
+                          <option value="4">May</option>
+                          <option value="5">June</option>
+                          <option value="6">July</option>
+                          <option value="7">August</option>
+                          <option value="8">September</option>
+                          <option value="9">October</option>
+                          <option value="10">November</option>
+                          <option value="11">December</option>
+                      </select>
+
+                      <div id="dateRange"></div>
+                      <button id="buttonDatePreviousWrap">&lsaquo;</button>
+                      <button id="buttonDateNextWrap">&rsaquo;</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- HOT EVENTS AREA -->
+        <section id="hot-events">
+          <h2 class="section-title text-center">Hot events</h2>
+          <div class="container">
+            <div class="row no-gutters">
+
+              <!-- left side -->
+              <div class="col-md-6">
+                <div class="hot-event hot-event-big">
+                  <a class="btn-itixy" href="#">Buy Tickets</a>
+                </div>
+              </div>
+
+              <!-- right side -->
+              <div class="col-md-6">
+                <div class="hot-event hot-event-small">
+                  <a class="btn-itixy" href="#">Buy Tickets</a>
+                </div>
+                <div class="hot-event hot-event-small">
+                  <a class="btn-itixy" href="#">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION BOTTOM NAVBAR  -->
+            <div class="section-nav" id="site-home-search-filters-secondary">
+              <div class="row text-center">
+                <div class="col-sm-12 col-md-6 col-lg-2">
+                  <a class="btn-itixy" href="#">Music</a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2">
+                  <a class="btn-itixy" href="#">Theatre</a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2">
+                  <a class="btn-itixy" href="#">Sports</a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2">
+                  <a class="btn-itixy" href="#">Cinema</a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                  <a class="btn-itixy" href="#">Tours and Festivals</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- MONTH'S FAVORITE AREA -->
+        <section id="month-favorite">
+          <div class="container text-center">
+            <h2 class="section-title text-center">Month's Favorite</h2>
+
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <div class="month-event month-unit-1">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="month-event month-unit-2">
+                </div>
+              </div>
+            </div>
+
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <div class="month-event month-unit-3">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="month-event month-unit-4">
+                </div>
+              </div>
+            </div>
+
+            <div class="section-link text-center">
+              <a href="#">Show All</a>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- SITE MAGAZINE AREA -->
+        <section id="site-magazine">
+          <div class="container">
+            <h2 class="section-title text-center">site Magazine</h2>
+
+            <div class="row no-gutters">
+              <div class="col-sm-12 col-md-6">
+                <article class="magazine-unit text-center">
+                  <img src="img/magazine-1.jpg" alt="#">
+                  <h3>Hills of Rock 2018</h3>
+                  <h4>Plovdiv Rowing Canal, Plovdiv</h4>
+                </article>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <article class="magazine-unit text-center">
+                  <img src="img/magazine-2.jpg" alt="#">
+                  <h3>ZUCCHERO</h3>
+                  <h4>Ancient Theatre, Plovdiv</h4>
+                </article>
+              </div>
+            </div>
+
+            <div class="row no-gutters">
+              <div class="col-sm-12 col-md-6">
+                <article class="magazine-unit text-center">
+                  <img src="img/magazine-3.jpg" alt="#">
+                  <h3>Hilda Kazasyan Tour 2018</h3>
+                  <h4>Home of culture, Plovdiv</h4>
+                </article>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <article class="magazine-unit text-center">
+                  <img src="img/magazine-4.jpg" alt="#">
+                  <h3>Sting</h3>
+                  <h4>Ancient Theatre, Plovdiv</h4>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-link text-center">
+              <a href="#">Read All Stories</a>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ART CORNER AREA -->
+        <section id="art-corner">
+          <div class="container text-center">
+            <h2 class="section-title text-center">Art Corner</h2>
+
+            <div class="row no-gutters">
+              <div class="col-sm-12 col-md-6">
+                <div class="art-thumb art-unit-1">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="art-thumb art-unit-2">
+                </div>
+              </div>
+            </div>
+
+            <div class="row no-gutters">
+              <div class="col-sm-12 col-md-6">
+                <div class="art-thumb art-unit-3">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="art-thumb art-unit-4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- end of .overlay-inner -->
+      </div>
+      <!-- end of #overlay-body background  -->
+    </div>

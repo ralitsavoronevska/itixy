@@ -1,0 +1,280 @@
+#page-iep
+  #individual-event
+    padding-top: 30px
+    .row
+      .row
+        #poster-img-1, #poster-img-2, #poster-img-3, #poster-img-4
+          background-size: 100% 100%
+          background-repeat: no-repeat
+          background-position: center center
+          min-height: 245px
+          border: 1px solid $white-color
+        #poster-img-1
+          background-image: url(../img/iep-1.jpg)
+        #poster-img-2
+          background-image: url(../img/iep-2.jpg)
+        #poster-img-3
+          background-image: url(../img/iep-3.jpg)
+        #poster-img-4
+          background-image: url(../img/iep-4.jpg)
+      .row
+        .event-rating
+          min-height: 125px
+          border: 1px solid $white-color
+          color: $white-color
+          background-color: rgba(189,0,69,.5)
+          p
+            padding-top: 5px
+            // iep voting buttons
+          .thumbs-up, .thumbs-down
+            display: inline-block
+            width: 45px
+            height: 45px
+            position: relative
+            border-radius: 100%
+          .thumbs-up
+            background-image: url(../img/thumbs-up-w.png)
+            span
+              position: absolute
+              bottom: -25px
+              left: 15px
+              color: #fff
+          .thumbs-down
+            background-image: url(../img/thumbs-down-w.png)
+            span
+              position: absolute
+              bottom: -25px
+              left: 15px
+              color: #fff
+      .section-heading
+        h2
+          color: $white-color
+          border: none
+          padding: 0
+        hr
+          border-top: 1px solid $white-color
+      #next-plays
+        min-height: 300px
+        color: $white-color
+        border-bottom: none
+        .next-event
+          min-height: 100px
+          .plays-desc
+            border: 1px solid $white-color
+            border-left: none
+            background-color: rgba(189,0,69,.5)
+            .center-elem
+              width: 99%
+      .iep-wrapper
+        min-height: 100px
+        color: $white-color
+        hr
+          border-top: 1px solid #fff
+          margin-top: 0.7rem
+      .row
+        #iep-resume
+          color: $white-color
+    // social bar
+  #footer-top
+    min-height: 40px
+    .section-title
+      font-size: 1.5em
+      padding: 0
+    a
+      min-height: 40px
+      line-height: 40px
+      color: $white-color !important
+      text-decoration: none
+      border-bottom: 1px solid $white-color
+    #btn-iep-buy
+      display: inline-block
+      padding: 0 30px
+      float: right
+      margin-right: 30px
+
+@media only screen and (max-width: 320px)
+  #page-iep
+    #individual-event
+      .row
+        .row
+          #poster-img-1
+            min-height: 160px
+          .date-outer
+            margin-top: .25rem !important
+            min-height: 125px !important
+          .event-rating
+            min-height: 119px !important
+        #next-plays
+          .next-event
+            .plays-desc
+              border-left: 1px solid #fff !important
+              .center-elem
+                width: 100% !important
+                position: relative !important
+    #footer-top
+      .row
+        .col-md-2
+          width: 20% !important
+          padding: 0
+          a
+            margin-right: 14% !important
+            span
+              display: none
+        #btn-iep-buy
+          margin-top: 10%
+          position: relative !important
+          left: 25%
+@media only screen and (min-width: 321px) and (max-width: 381px)
+  #page-iep
+    #footer-top
+      .row
+        .col-md-2
+          width: auto !important
+          padding: 0
+          a
+            margin-right: 14% !important
+            span
+              display: none
+        #btn-iep-buy
+          margin-top: 10%
+          position: relative!important
+          left: 30%
+
+@media only screen and (min-width: 382px) and (max-width: 550px)
+  #page-iep
+    #footer-top
+      .row
+        .col-md-2
+          max-width: 15% !important
+          span
+            display: none
+        #btn-iep-buy
+          position: absolute
+          right: 5%
+
+@media only screen and (min-width: 321px) and (max-width: 550px)
+  #page-iep
+    #individual-event
+      .row
+        .row
+          #poster-img-1
+            background-size: 100% 100%
+            background-repeat: no-repeat
+            background-position: center center
+            min-height: 200px
+          .date-outer
+            margin-top: .25rem !important
+            min-height: 125px !important
+          .event-rating
+            min-height: 119px !important
+        #next-plays
+          .next-event
+            .plays-desc
+              border-left: 1px solid #fff !important
+              .center-elem
+                width: 100% !important
+                position: relative !important
+
+@media only screen and (min-width: 551px) and (max-width: 767px)
+  #page-iep
+    #individual-event
+      .row
+        .row
+          #poster-img-1
+            min-height: 250px
+            width: auto
+            background-size: cover !important
+            background-position: top center
+          .date-outer
+            margin-top: .25rem !important
+            min-height: 125px !important
+          .event-rating
+            min-height: 119px !important
+        #next-plays
+          .next-event
+            .plays-desc
+              border-left: 1px solid #fff !important
+              .center-elem
+                width: 100% !important
+                position: relative !important
+    #footer-top
+      .row
+        .col-md-2
+          width: auto !important
+          margin-right: 5%!important
+          span
+            display: none
+        #btn-iep-buy
+          position: absolute
+          right: 7%
+
+@media only screen and (min-width: 768px)
+  #page-iep
+    #individual-event
+      .row
+        .col-md-7
+          #poster-img-1, #poster-img-2, #poster-img-3, #poster-img-4
+            min-height: 245px
+          .event-rating
+            min-height: 119px !important
+          .row
+            .col-md-9
+              padding-right: .5rem!important
+        .col-md-5
+          padding-left: .5rem!important
+        .iep-wrapper
+          padding-left: 15px !important
+        .row
+          #iep-resume
+            padding-left: 15px !important
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+  #page-iep
+    #footer-top
+      .row
+        .col-md-2
+          max-width: 17% !important
+          margin-right: 20px
+          span
+            position: absolute !important
+            line-height: 20px
+            margin-top: 12px
+            left: 33%
+            border-bottom: 1px solid #fff
+        #btn-iep-buy
+          position: absolute
+          right: 5%
+
+@media only screen and (min-width: 992px)
+  #page-iep
+    #footer-top
+      .row
+        .col-md-2
+          max-width: 17% !important
+          margin-right: 20px
+          span
+            position: absolute !important
+            line-height: 20px
+            margin-top: 12px
+            left: 25%
+            border-bottom: 1px solid #fff
+        #btn-iep-buy
+          position: absolute
+          right: 5%
+
+@media only screen and (min-width: 1200px)
+  #page-iep
+    #footer-top
+      .row
+        .col-md-2
+          max-width: 17% !important
+          margin-right: 20px
+          span
+            position: absolute !important
+            line-height: 20px
+            margin-top: 12px
+            left: 20%
+            border-bottom: 1px solid #fff
+        #btn-iep-buy
+          position: absolute
+          right: 5%

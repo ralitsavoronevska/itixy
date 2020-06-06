@@ -29,7 +29,7 @@ function html() {
 }
 
 function css() {
-    return gulp.src('src/sass/style.scss')
+    return gulp.src('src/sass/style.sass')
         .pipe(gulpIf(!isProd, sourcemaps.init()))
         .pipe(sass({
             includePaths: ['node_modules']

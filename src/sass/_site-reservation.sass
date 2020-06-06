@@ -1,0 +1,357 @@
+#page-reservation,
+  #reservation-event
+    padding-top: 30px
+    .post-thumb
+      .post-content
+        h5
+          color: $white-color
+      .post-title
+        a
+          text-decoration: none !important
+
+  // #reservation-header
+  //   background-image: url(../img/header.png)
+  //   position: relative
+  //   min-height: 150px
+  //   .site-logo
+  //     font-size: 200%
+  //   h3
+  //     display: inline-block
+  //     min-height: 150px
+  //     line-height: 150px
+      color: $white-color
+  //
+  // .btn-timer
+  //   position: absolute
+  //   right: 20px
+  //   top: 60px
+
+  #reservation-poster
+    color: $white-color
+    border: 1px solid $white-color
+    overflow: hidden
+    border-radius: 5px
+    background-color: rgba(107, 27, 53, 0.4)
+    .section-link
+      background-color: transparent
+      border-top: 2px solid $white-color
+      a
+        color: $white-color
+
+    #reservation-img-1, #reservation-img-2, #reservation-img-3, #reservation-img-4
+      background-repeat: no-repeat
+      background-size: 100% 100%
+      background-position: center center
+      min-height: 220px
+      border: 1px solid $white-color
+
+    #reservation-img-1
+      background-image: url(../img/iep-1.jpg)
+
+    #reservation-img-2
+      background-image: url(../img/iep-2.jpg)
+
+    #reservation-img-3
+      background-image: url(../img/iep-3.jpg)
+
+    #reservation-img-4
+      background-image: url(../img/iep-4.jpg)
+
+  #reservation-main-content
+    background-color: rgba(107, 27, 53, 0.4)
+
+  .reservation-seatmap
+      position: relative
+      min-height: 650px
+      border-radius: 5px
+      a
+        display: inline-block
+        padding: 15px
+      #reservation-back-btn
+        position: absolute
+        top: 0
+        left: 0
+        color: $white-color
+
+      #reservation-plus-btn
+        position: absolute
+        right: 0
+        bottom: 0
+        color: $white-color
+        font-weight: bold
+        font-size: 2em
+        text-decoration: none !important
+      span
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+  #reservation-right-col
+    color: $white-color
+    border: 2px solid $white-color
+    border-top: 0
+    border-left: 0
+    border-radius: 5px
+    .table-responsive
+      .table
+        display: block
+        border-color: transparent
+        margin-bottom: 0px !important
+        text-align: unset
+        tbody
+          border-bottom: none
+          td
+            width: 100%
+            padding: 15px
+            td, th
+              border-top: none !important
+              padding: 1rem !important
+
+  /* input boxes for number of tickets */
+  .number
+    width: 50px
+
+  #down-buttons
+    button, a
+      display: inline-block
+      min-width: 68px
+      padding: 15px
+      text-transform: uppercase
+      margin-top: 15px
+      margin-left: 20px
+      cursor: pointer
+      font-weight: bold
+      text-decoration: none !important
+      &:hover
+        color: $white-color
+          text-decoration: none
+
+@media only screen and (max-width: 320px)
+  #reservation-poster
+    .row
+      .date-container
+        padding: 0 !important
+      .post-thumb
+        #reservation-img-1, #reservation-img-2, #reservation-img-3, #reservation-img-4
+          min-height: 160px !important
+        .post-content
+          h5
+            margin-top: 20px!important
+            margin-bottom: 20px
+          p
+            margin-bottom: 20px
+  #reservation-main-content
+    #reservation-right-col
+      section
+        #reservation-details-table
+          border-left: 2px solid $white-color
+          .col-md-12
+            padding-right: 0 !important
+            padding-left: 5px !important
+    #down-buttons
+      .btn-itixy
+        margin-left: 0 !important
+
+@media only screen and (min-width: 321px) and (max-width: 360px)
+  #reservation-poster
+    .row
+      .date-container
+        padding: 0 !important
+      .post-thumb
+        #reservation-img-1, #reservation-img-2, #reservation-img-3, #reservation-img-4
+          min-height: 160px !important
+        .post-content
+          h5
+            height: 50px !important
+            line-height: normal !important
+            margin-top: 10px!important
+          p
+            height: 30px !important
+            line-height: normal !important
+            margin-bottom: 30px
+  #reservation-main-content
+    #reservation-right-col
+      section
+        #reservation-details-table
+          border-left: 2px solid $white-color
+
+@media only screen and (min-width: 361px) and (max-width: 375px)
+  #reservation-poster
+    .row
+      .date-container
+        padding: 0 !important
+      .post-thumb
+        #reservation-img-1, #reservation-img-2, #reservation-img-3, #reservation-img-4
+          min-height: 160px !important
+        .post-content
+          h5
+            height: 30px !important
+            line-height: normal !important
+            margin-top: 10px!important
+          p
+            height: 30px!important
+            line-height: 60px !important
+            margin-bottom: 40px
+  #reservation-main-content
+    #reservation-right-col
+      section
+        #reservation-details-table
+          border-left: 2px solid $white-color
+
+@media only screen and (min-width: 376px) and (max-width: 414px)
+  #reservation-poster
+    .row
+      .date-container
+        padding: 0 !important
+      .post-thumb
+        #reservation-img-1, #reservation-img-2, #reservation-img-3, #reservation-img-4
+          min-height: 180px !important
+        .post-content
+          h5
+            height: 30px !important
+            line-height: normal !important
+            margin-top: 10px!important
+          p
+            height: 30px!important
+            line-height: 60px !important
+            margin-bottom: 40px
+  #reservation-main-content
+    #reservation-right-col
+      section
+        #reservation-details-table
+          border-left: 2px solid $white-color
+
+@media only screen and (min-width: 415px) and (max-width: 491px)
+  #reservation-poster
+    .row
+      .date-container
+        padding: 0 !important
+      .post-thumb
+        .post-content
+          h5
+            height: 30px !important
+            line-height: normal !important
+            margin-top: 10px!important
+          p
+            height: 30px!important
+            line-height: 60px !important
+            margin-bottom: 40px
+  #reservation-main-content
+    #reservation-right-col
+      section
+        #reservation-details-table
+          border-left: 2px solid $white-color
+
+@media only screen and (min-width: 321px) and (max-width: 550px)
+  #reservation-poster
+    .row
+      .date-outer
+        margin-top: .25rem !important
+        min-height: 125px !important
+        .date-container
+          padding: 0 !important
+
+@media only screen and (min-width: 551px) and (max-width: 767px)
+  #reservation-poster
+    .row
+      .date-outer
+        margin-top: .25rem !important
+        min-height: 125px !important
+
+@media only screen and (min-width: 492px) and (max-width: 767px)
+  #reservation-poster
+    .row
+      .date-container
+        padding: 0 !important
+      .post-thumb
+        .post-content
+          h5
+            margin-top: 20px!important
+          p
+            margin-bottom: 20px
+  #reservation-main-content
+    #reservation-right-col
+      section
+        #reservation-details-table
+          border-left: 2px solid $white-color
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+  #reservation-poster
+    min-height: 170px!important
+    .row
+      .date-container
+        min-height: 150px !important
+        .day-week-container
+          padding-top: 15px
+      .post-thumb
+        padding-left: 0 !important
+        #reservation-img-1, #reservation-img-2, #reservation-img-3, #reservation-img-4
+          min-height: 150px!important
+          width: 250px!important
+        .post-content
+          position: absolute
+          top: 20%
+          left: 50%
+          h5
+            margin-top: 10px !important
+          p
+            height: 20px !important
+            line-height: 50px !important
+  #reservation-main-content
+    #reservation-right-col
+      .table-responsive
+        .table
+          border-top: 1px solid $white-color
+
+@media only screen and (min-width: 992px)
+  #reservation-poster
+    .row
+      .date-container
+        min-height: 150px !important
+        .day-week-container
+          padding-top: 15px
+      .post-thumb
+        padding-left: 0 !important
+        #reservation-img-1, #reservation-img-2, #reservation-img-3, #reservation-img-4
+          min-height: 150px!important
+          width: 300px!important
+        .post-content
+          position: absolute
+          top: 20%
+          left: 50%
+          h5
+            margin-top: 20px !important
+          p
+            height: 30px !important
+            line-height: 30px !important
+  #reservation-main-content
+    #reservation-right-col
+      .table-responsive
+        .table
+          border-top: 1px solid $white-color
+
+@media only screen and (min-width: 1000px)
+  #reservation-poster
+    .row
+      .date-container
+        min-height: 150px !important
+        .day-week-container
+          padding-top: 15px
+      .post-thumb
+        padding-left: 0 !important
+        #reservation-img-1, #reservation-img-2, #reservation-img-3, #reservation-img-4
+          min-height: 150px!important
+          width: 300px!important
+        .post-content
+          position: absolute
+          top: 20%
+          left: 50%
+          h5, p
+            height: auto !important
+            line-height: normal !important
+  #reservation-main-content
+    #reservation-right-col
+      .table-responsive
+        .table
+          border-top: 1px solid $white-color

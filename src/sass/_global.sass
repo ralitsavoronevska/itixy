@@ -1,0 +1,431 @@
+// variables
+$text-font: 'Open Sans', sans-serif
+$white-color: #fff
+$dark-purple-border: 1px solid rgb(70, 19, 47)
+
+// base sass
+a
+	color: #000
+	&:hover
+		color: #000
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+h1, h2, h3, h4, h5
+	font-family: $text-font
+
+.section-nav
+	a
+		display: block
+		padding: 5px 0
+		color: $white-color
+		&:hover
+			text-decoration: none
+
+.section-title
+	padding: 30px 0
+	color: $white-color
+
+.section-link
+	a
+		display: block
+		padding: 15px 0
+		color: $white-color
+
+// helper classes
+.center-elem
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+// pagination
+.page-item:first-child .page-link,
+.page-item:last-child .page-link
+	background-color: transparent
+	color: $white-color
+	border: none
+
+.page-link
+	color: #000
+
+// buttons
+.btn-itixy,
+// #site-home-search-filters-first, #site-home-search-filters-secondary, #site-search-results-filters, #site-subcategory-filter , #site-my-account-menu
+.nav-link.active.btn-itixy, .nav-pills.nav-link.btn-itixy, .nav-pills.show>.nav-link.btn-itixy,
+
+// thematic-image buttons
+.back-btn, .forward-btn
+	background-color: rgba(189,0,69,.7)
+	border: 2px solid $white-color
+	color: $white-color !important
+	border-radius: 5px
+	text-decoration: none
+	&:hover, &:active
+		background-color: rgba(189,0,69,.7)
+
+.date-outer
+	.date-container
+		background-color: rgba(189,0,69,.5)
+		color: $white-color
+		border: 1px solid $white-color
+	.day-month-container
+		font-size: 2em
+		font-weight: bold
+	.year-container
+		font-size: 0.8em
+	hr
+		margin-bottom: 0
+		margin-top: 0
+		width: 80%
+		border-top: 1px solid $white-color
+	.time-container
+			font-weight: bold
+
+body
+	font-family: $text-font
+	margin: 0
+	padding: 0
+	overflow-x: hidden
+	//header MAIN
+	#site-header
+		background-image: url(../img/header.png)
+		padding-bottom: 0
+		padding-top: 5px
+
+@media only screen and (min-width: 260px) and (max-width: 319px)
+	#site-header
+		padding-top: 25px !important
+
+@media only screen and (min-width: 320px) and (max-width: 479px)
+	#site-header
+		min-height: 90px
+
+@media only screen and (min-width: 556px)
+	#site-header
+		padding: 0
+
+#header-container
+	padding: 0
+	margin: 0
+	// mega menu
+	#mega-menu
+		#headerleft
+			width: 200px
+			img
+				max-width: 100%
+		#headerright
+			#topbar
+				position: absolute
+				top: 0
+				right: 1%
+				margin-top: 20px
+				color: $white-color
+				#topbar-nav a
+					display: inline-block
+					margin: 0 10px
+					color: $white-color
+					text-decoration: none
+
+//Media queries
+// tablet and desktop settings
+
+//MEGA MENU
+// Logo and toggler
+@media only screen and (max-width: 209px)
+	#mega-menu
+		#headerleft
+			height: 180px
+			img
+				width: 110px
+				margin-top: 100px
+				margin-left: 13%
+		#headerright
+			.toggler
+				top: 120px
+				right: 10px
+
+@media only screen and (min-width: 210px) and (max-width: 259px)
+	#mega-menu
+		#headerleft
+			margin-top: 70px
+			height: 100px
+			img
+				width: 110px
+				margin-top: 20px
+				margin-left: 13%
+		#headerright
+			.toggler
+				top: 110px
+				right: 10px
+
+@media only screen and (min-width: 260px) and (max-width: 319px)
+	#mega-menu
+		#headerleft
+			margin-top: 30px
+			height: 120px
+			margin-left: 10%
+			img
+				width: 150px
+				margin-top: 20px
+		#headerright
+			.toggler
+				top: 100px
+
+@media only screen and (min-width: 320px) and (max-width: 449px)
+	#mega-menu
+		#headerleft
+			margin-top: 20px
+			height: 150px
+			img
+				width: 180px
+				margin-left: 12%
+				margin-top: 30px
+		#headerright
+			.toggler
+				top: 90px
+
+@media only screen and (min-width: 450px) and (max-width: 479px)
+	#mega-menu
+		#headerleft
+			margin-top: 0
+			height: 150px
+			img
+				width: 200px
+				margin-left: 13%
+				margin-top: 20px
+		#headerright
+			.toggler
+				top: 65px
+
+@media only screen and (min-width: 480px) and (max-width: 555px)
+	#mega-menu
+		#headerleft
+			margin-top: 15px !important
+			height: 140px
+			img
+				margin-top: 10px
+				margin-left: 11%
+		#headerright
+			.toggler
+				top: 70px
+
+@media only screen and (min-width: 556px) and (max-width: 768px)
+	#mega-menu
+		#headerleft
+			margin-top: 0 !important
+			height: 120px
+			img
+				margin-left: 13%
+		#headerright
+			.toggler
+				top: 50px
+
+@media only screen and (min-width: 769px)
+	#mega-menu
+		#headerleft
+			img
+				margin-left: 13%
+
+//Media queries
+// tablet and desktop settings
+
+//TOP BAR
+@media only screen and (max-width: 209px)
+	#topbar
+		#topbar-nav
+			a
+				margin: 0
+@media only screen and (max-width: 479px)
+	#topbar
+		text-align: center
+		margin-top: 0px !important
+		a
+			margin: 0 8px
+
+@media only screen and (min-width: 480px) and (max-width: 555px)
+	#topbar
+		margin-top: 0px !important
+
+@media only screen and (min-width: 555px) and (max-width: 768px)
+	#topbar
+		margin-left: 36%
+
+@media only screen and (min-width: 769px)
+	#topbar
+		right: 10px
+
+// toggler btn
+.toggler
+	display: inline-block
+	position: absolute
+	right: 15px
+	top: 90px
+	width: auto
+	min-height: 50px
+	padding-right: 20px
+	.bar
+		display: block
+		width: 35px
+		height: 4px
+		background-color: $white-color
+		margin: 6px 0
+		transition: 0.4s
+.change
+	.bar1
+		transform: rotate(-45deg) translate(-9px, 6px)
+.change
+	.bar2
+		opacity: 0
+.change
+	.bar3
+		transform: rotate(45deg) translate(-8px, -6px)
+
+
+// main menu
+.main-menu
+	font-size: 200%
+	display: none
+	li
+		opacity: 1
+		a
+			display: block
+			padding: 5px 0
+			color: $white-color
+			text-decoration: none
+			.active-item
+				opacity: 1
+
+//Media queries
+// tablet and desktop settings
+
+//MAIN MENU
+@media only screen and (max-width: 768px)
+	#headerright
+		.main-menu
+			.active-arrow
+				text-align: left
+				padding-left: 50px
+				background-image: url(../img/arrowback.png)
+				background-position: left center
+				background-repeat: no-repeat
+
+@media only screen and (min-width: 769px)
+	#headerright
+		.toggler
+			display: none
+		.main-menu
+			display: block !important
+			position: absolute
+			top: 0
+			right: 15px
+			margin-right: 10px
+			margin-top: 55px
+			ul
+				display: flex
+				justify-content: flex-end
+				text-align: right
+				li
+				  margin: 0 15px
+				  &:last-of-type
+				  	margin-right: 0
+
+// sub menu
+.sub-menu-container
+	display: none
+	.sub-menu
+	  background: $white-color
+	  padding-top: 15px
+	  height: 250px
+	  .sub-menu-left
+	    overflow-y: scroll
+			a
+	 	    display: block
+	 	    padding: 10px 0
+	 	    text-decoration: none
+
+//Media queries
+// tablet and desktop settings
+
+//SUB MENU
+@media only screen and (max-width: 767px)
+	 .sub-menu-container
+	   .sub-menu
+	     height: 750px
+	     .sub-menu-left, .sub-menu-right
+	       margin-left: 20px
+
+@media only screen and (min-width: 768px)
+	.sub-menu-container
+		.sub-menu
+	 		display: flex
+	  	padding: 15px
+	  	.sub-menu-left
+	    	flex: 1
+	   	 	border-right: 1px solid #999
+	  	.sub-menu-right
+	    	flex: 4
+	    	padding-left: 50px
+	    	text-align: left
+	    	li
+	      	display: inline-block
+	      	width: 30%
+	      	a
+	        	display: block
+	        	padding: 10px 0
+
+
+//MAIN content
+main
+	overflow-y: hidden
+	background-image: url(../img/body.jpg)
+	background-repeat: no-repeat
+	background-attachment: fixed
+	background-position: center center
+	background-size: 100% 100vh
+	background-color: rgb(70, 19, 47)
+
+	#overlay-body
+		margin: 30px
+		margin-top: 0px
+		margin-bottom: 0px
+		background: rgba(255, 255, 255, 0.3)
+		border-radius: 8px
+		.overlay-inner
+			padding-bottom: 30px
+			margin-top: 30px
+	#overlay-footer
+		margin: 30px
+		margin-bottom: 0
+		border-radius: 8px
+		background: rgba(255, 255, 255, 0.3)
+
+		// FOOTER
+		footer
+			padding: 10px 0
+			margin-bottom: 30px
+			#footer-nav
+				width: 100%
+				color: $white-color
+				a
+					//display: block
+					margin: 10px
+					color: $white-color
+					text-decoration: none !important
+
+//Media queries
+// tablet and desktop settings
+
+//FOOTER
+@media only screen and (min-width: 480px) and (max-width: 768px)
+	#footer-nav
+		a
+			display: inline-flex
+
+@media only screen and (min-width: 769px)
+	#footer-nav
+		display: flex
+		a
+			flex: 1

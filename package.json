@@ -1,0 +1,40 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "Me first Gulp Project",
+  "main": "index.js",
+  "homepage": "https://ralitsavoronevska.github.io/itixy",
+  "scripts": {
+    "start": "gulp",
+    "dev": "gulp serve",
+    "prod": "cross-env NODE_ENV=prod gulp",
+    "deploy": "gh-pages -d docs"
+  },
+  "author": "Ralitsa Voronevska",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "browser-sync": "^2.26.7",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-html-partial": "^1.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-js-import": "^1.0.6",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralitsavoronevska/itixy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ralitsavoronevska/itixy/issues"
+  }
+}

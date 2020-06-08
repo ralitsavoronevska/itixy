@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Krasimir Kraev">
+        <meta name="description" content="Bootstrap 4.1, Gulp, Sass, Browser-Sync!">
+        <!-- Bootstrap CDN <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+      -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i%7COpen+Sans:400,600,700&amp;subset=cyrillic"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/all.css">
+        <title>iTixy | My account page</title>
+    </head>
+    
+    <body id="page-my-account">
+        <!-- SITE HEADER -->
+        <header id="site-header">
+            <!-- MegaMenu -->
+            <div class="container-fluid" id="header-container">
+                <div id="mega-menu">
+                    <div id="headerleft"> <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                    </div>
+                    <!-- logo & toggle btn -->
+                    <div id="headerright">
+                        <!-- TOPBAR -->
+                        <div id="topbar">
+                            <div class="container-fluid">
+                                <nav id="topbar-nav"> <a href="#">Home</a> <a href="#">Our Mission</a> <a href="#">Promo Deals</a>
+                                    <a
+                                    href="myAccount.html">My Account</a>
+                                </nav>
+                            </div>
+                        </div> <a href="#" class="toggler">
+
+            <span class="bar bar1"></span>
+
+            <span class="bar bar2"></span>
+
+            <span class="bar bar3"></span>
+
+          </a>
+                        <!-- main menu -->
+                        <div class="main-menu text-center">
+                            <ul>
+                                <li><a href="#">Music</a>
+                                </li>
+                                <li><a href="#">Theatre</a>
+                                </li>
+                                <li><a href="#">Sports</a>
+                                </li>
+                                <li><a href="#">Calendar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END headerright -->
+                </div>
+                <!-- END MegaMenu -->
+            </div>
+        </header>
+        <!-- sub menu -->
+        <div class="sub-menu-container">
+            <div class="sub-menu">
+                <!-- sub menu left col-->
+                <div class="sub-menu-left">
+                    <!--<h3 class="sub-menu-title">Sub</h3>-->
+                    <ul>
+                        <li><a href="#">Music</a>
+                        </li>
+                        <li><a href="#">Theatre</a>
+                        </li>
+                        <li><a href="#">Sports</a>
+                        </li>
+                        <li><a href="#">Cinema</a>
+                        </li>
+                        <li><a href="#">Exhibition &amp; Fashion</a>
+                        </li>
+                        <li><a href="#">Tours &amp; Festivals</a>
+                        </li>
+                        <li><a href="#">Other</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sub menu right col -->
+                <div class="sub-menu-right">
+                    <ul>
+                        <li><a href="#">Classic</a>
+                        </li>
+                        <li><a href="subcategory.html">Jazz &amp; Blues</a>
+                        </li>
+                        <li><a href="#">Rock &amp; Metal</a>
+                        </li>
+                        <li><a href="#">Pop</a>
+                        </li>
+                        <li><a href="#">RnB &amp; Hip Hop</a>
+                        </li>
+                        <li><a href="#">Latin &amp; Reggae</a>
+                        </li>
+                        <li><a href="#">Electronic &amp; Disco</a>
+                        </li>
+                        <li><a href="#">Country &amp; Folk</a>
+                        </li>
+                        <li><a href="#">Pop Folk &amp; Chanson</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END sub menu -->
+        <main>
+            <div class="thematic-image"> <a href="#" class="back-btn">Back</a> <a href="#" class="forward-btn">Forward</a>
+            </div>
+            <!-- the container for the overlay-body background -->
+            <div id="overlay-body">
+                <div class="overlay-inner">
+                    <!-- MENU TITLE AREA -->
+                    <div class="container">
+                         <h2 class="section-title mt-2 text-center" id="my-account-title">My events</h2>
+                        <!-- MY ACCOUNT MENU -->
+                        <div class="section-nav" id="site-my-account-menu">
+                            <div class="container-fluid text-center">
+                                <div class="nav nav-pills mb-3 row" id="pills-my-account-tab" role="tablist"
+                                aria-orientation="vertical">
+                                    <li class="nav-item col-sm-12 col-md-6 col-lg-3"><a class="nav-link active btn-itixy" id="pills-my-account-events-tab"
+                                        data-toggle="pill" href="#pills-my-account-events" role="tab" aria-controls="pills-my-account-events"
+                                        aria-selected="true">My events</a>
+                                    </li>
+                                    <li class="nav-item col-sm-12 col-md-6 col-lg-3"><a class="nav-link btn-itixy" id="pills-my-account-reservations-tab" data-toggle="pill"
+                                        href="#pills-my-account-reservations" role="tab" aria-controls="pills-my-account-reservations"
+                                        aria-selected="false">My reservations</a>
+                                    </li>
+                                    <li class="nav-item col-sm-12 col-md-6 col-lg-3"><a class="nav-link btn-itixy" id="pills-my-account-purchase-history-tab"
+                                        data-toggle="pill" href="#pills-my-account-purchase-history" role="tab"
+                                        aria-controls="pills-my-account-purchase-history" aria-selected="false">Purchase history</a>
+                                    </li>
+                                    <li class="nav-item col-sm-12 col-md-6 col-lg-3"><a class="nav-link btn-itixy" id="pills-my-account-gifts-tab" data-toggle="pill"
+                                        href="#pills-my-account-gifts" role="tab" aria-controls="pills-my-account-gifts"
+                                        aria-selected="false">Gifts</a>
+                                    </li>
+                                    <li class="nav-item col-sm-12 col-md-6 col-lg-3"><a class="nav-link btn-itixy" id="pills-my-account-messages-tab" data-toggle="pill"
+                                        href="#pills-my-account-messages" role="tab" aria-controls="pills-my-account-messages"
+                                        aria-selected="false">Messages</a>
+                                    </li>
+                                    <li class="nav-item col-sm-12 col-md-6 col-lg-3"><a class="nav-link btn-itixy" id="pills-my-account-settings-tab" data-toggle="pill"
+                                        href="#pills-my-account-settings" role="tab" aria-controls="pills-my-account-settings"
+                                        aria-selected="false">Account settings</a>
+                                    </li>
+                                </div>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-my-account-events" role="tabpanel"
+                                    aria-labelledby="pills-my-account-events-tab">
+                                        <div class="table-responsive">
+                                            <table id="my-events-menu-table" class="table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Time</th>
+                                                        <th>Event name</th>
+                                                        <th>Venue</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>01.05.18</td>
+                                                        <td>21:00</td>
+                                                        <td>Itixy opening party</td>
+                                                        <td style="position: relative;"><a class="btn-itixy" href="#">location</a>
+                                                        </td>
+                                                        <td style="position: relative;"><a class="btn-itixy" href="e-ticket.html">eTicket</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot></tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-my-account-reservations" role="tabpanel"
+                                    aria-labelledby="pills-my-reservations-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-my-account-purchase-history"
+                                    role="tabpanel" aria-labelledby="pills-my-account-purchase-history-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-my-account-gifts" role="tabpanel"
+                                    aria-labelledby="pills-my-account-gifts-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-my-account-messages" role="tabpanel"
+                                    aria-labelledby="pills-my-account-messages-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-my-account-settings" role="tabpanel"
+                                    aria-labelledby="pills-my-account-settings-tab">...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of .overlay-inner -->
+                </div>
+                <!-- end of #overlay-body background -->
+            </div>
+            <!-- container for the #overlay-footer background -->
+            <div id="overlay-footer">
+                <!-- SITE FOOTER -->
+                <footer id="site-footer">
+                    <div class="container d-flex">
+                        <nav id="footer-nav" class="text-center"> <a href="#">Venues</a> <a href="#">Contact Us</a> <a href="#">Polices</a>
+                            <a
+                            href="#">Terms and Conditions</a> <a href="#">Partners</a> <a href="#">FAQ's</a>
+                        </nav>
+                    </div>
+                </footer>
+                <!-- end of #overlay-footer background -->
+            </div>
+        </main>
+        <!-- Optional JavaScript CDN jQuery first, then Popper.js, then Bootstrap
+        JS <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+              -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/mega-menu.js"></script>
+        <script src="js/my-events-menu-table.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    </body>
+
+</html>

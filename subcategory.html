@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta name="description" content="Itixy" />
+        <meta name="web_author" content="Ralitsa Voronevska" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i%7COpen+Sans:400,600,700&amp;subset=cyrillic"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="https://www.pigno.se/barn/PIGNOSE-Calendar/dist/css/pignose.calendar.css"
+        />
+        <link rel="icon" href="./img/logo.png" />
+        <meta name="theme-color" content="#602c50" />
+        <script src="js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+        <script src="https://www.pigno.se/barn/PIGNOSE-Calendar/dist/js/pignose.calendar.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <title>iTixy | Homepage</title>
+    </head>
+    
+    <body>
+        <!-- SITE HEADER -->
+        <header id="site-header">
+            <!-- MegaMenu -->
+            <div class="container-fluid" id="header-container">
+                <div id="mega-menu">
+                    <div id="headerleft"><a href="index.html"><img src="img/logo.png" alt="logo"></a>
+
+                    </div>
+                    <!-- logo & toggle btn -->
+                    <div id="headerright">
+                        <!-- TOPBAR -->
+                        <div id="topbar">
+                            <div class="container-fluid">
+                                <nav id="topbar-nav"> <a href="index.html">Home</a>
+ <a href="#">Our Mission</a>
+ <a href="#">Promo Deals</a>
+
+                                    <a
+                                    href="myAccount.html">My Account</a>
+                                </nav>
+                            </div>
+                        </div> <a href="#" class="toggler">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                            <span class="bar bar3"></span>
+                        </a>
+
+                        <!-- main menu -->
+                        <div class="main-menu text-center">
+                            <ul>
+                                <li><a href="#">Music</a>
+
+                                </li>
+                                <li><a href="#">Theatre</a>
+
+                                </li>
+                                <li><a href="#">Sports</a>
+
+                                </li>
+                                <li><a href="#">Calendar</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END headerright -->
+                </div>
+                <!-- END MegaMenu -->
+            </div>
+        </header>
+        <!-- sub menu -->
+        <div class="sub-menu-container">
+            <div class="sub-menu">
+                <!-- sub menu left col-->
+                <div class="sub-menu-left">
+                    <!--<h3 class="sub-menu-title">Sub</h3>-->
+                    <ul>
+                        <li><a href="#">Music</a>
+
+                        </li>
+                        <li><a href="#">Theatre</a>
+
+                        </li>
+                        <li><a href="#">Sports</a>
+
+                        </li>
+                        <li><a href="#">Cinema</a>
+
+                        </li>
+                        <li><a href="#">Exhibition &amp; Fashion</a>
+
+                        </li>
+                        <li><a href="#">Tours &amp; Festivals</a>
+
+                        </li>
+                        <li><a href="#">Other</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- sub menu right col -->
+                <div class="sub-menu-right">
+                    <ul>
+                        <li><a href="#">Classic</a>
+
+                        </li>
+                        <li><a href="subcategory.html">Jazz &amp; Blues</a>
+
+                        </li>
+                        <li><a href="#">Rock &amp; Metal</a>
+
+                        </li>
+                        <li><a href="#">Pop</a>
+
+                        </li>
+                        <li><a href="#">RnB &amp; Hip Hop</a>
+
+                        </li>
+                        <li><a href="#">Latin &amp; Reggae</a>
+
+                        </li>
+                        <li><a href="#">Electronic &amp; Disco</a>
+
+                        </li>
+                        <li><a href="#">Country &amp; Folk</a>
+
+                        </li>
+                        <li><a href="#">Pop Folk &amp; Chanson</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END sub menu -->
+        <main>
+            <div class="thematic-image"> <a href="index.html" class="back-btn">Back</a> <a href="#" class="forward-btn">Forward</a>
+            </div>
+            <!-- container for the #overlay-body background -->
+            <div id="overlay-body">
+                <!-- container for the .overlay-inner -->
+                <div class="overlay-inner">
+                    <!-- SUBCATEGORY AREA -->
+                    <section id="site-subcategory">
+                        <div class="container">
+                             <h2 class="section-title mt-2 text-left" id="subcategory-title">Jazz &amp; Blues</h2>
+                        </div>
+                        <!-- SUBCATEGORY FILTER -->
+                        <div class="section-nav" id="site-subcategory-filter">
+                            <div class="container text-center">
+                                <ul class="nav nav-pills row" role="tablist">
+                                    <li class="nav-item col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a class="nav-link btn-itixy itixy-color rounded border-white-2 font-bold"
+                                        data-toggle="pill" href="#pills-filter3-filters" role="tab" aria-controls="pills-filter3-filters"
+                                        aria-selected="false">City</a>
+                                    </li>
+                                    <li class="nav-item col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a class="nav-link btn-itixy itixy-color rounded border-white-2 font-bold"
+                                        data-toggle="pill" href="#pills-filter4-filters" role="tab" aria-controls="pills-filter4-filters"
+                                        aria-selected="false">Dates</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content container p-0 mt-1" id="pills-tabContent">
+                                    <!-- filter1 tab -->
+                                    <div class="tab-pane fade show active" id="pills-filter1-filters" role="tabpanel"
+                                    aria-labelledby="pills-filter1-filters">
+                                        <div class="row p-0 m-0 text-center">
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt1</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt2</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt3</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt4</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt5</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt6</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt7</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-6 col-md-3 col-lg-3"> <a href="#">Filter1 opt8</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt9</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt10</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt11</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt12</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt13</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt14</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt15</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt16</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt17</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt18</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt19</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt20</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- filter2 tab -->
+                                    <div class="tab-pane fade" id="pills-filter2-filters" role="tabpanel"
+                                    aria-labelledby="pills-filter2-filters">
+                                        <div class="row p-0 m-0 text-center">
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt1</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt2</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt3</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt4</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt5</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt6</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt7</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-6 col-md-3 col-lg-3"> <a href="#">Filter2 opt8</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt9</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt10</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt11</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt12</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt13</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt14</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt15</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt16</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt17</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt18</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt19</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt20</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- filter3 tab -->
+                                    <div class="tab-pane fade" id="pills-filter3-filters" role="tabpanel"
+                                    aria-labelledby="pills-filter3-filters">
+                                        <div class="row p-0 m-0 text-center">
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Sofia</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Plovdiv</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Varna</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Bourgas</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Ruse</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Stara Zagora</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Pleven</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-6 col-md-3 col-lg-3"> <a href="#">Dobrich</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Sliven</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Shumen</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Pernik</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Haskovo</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Yambol</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Pazardzhik</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Blogoevgrad</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Veliko Tarnovo</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Vratsa</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Gabrovo</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Asenovgrad</a>
+                                            </div>
+                                            <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Vidin</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- filter4 tab -->
+                                    <div class="tab-pane fade" id="pills-filter4-filters" role="tabpanel"
+                                    aria-labelledby="pills-filter4-filters">
+                                        <!-- Calendar -->
+                                        <!-- Original: https://codepen.io/PIGNOSE/pen/VzOpLo -->
+                                        <div class="calendar row p-0 m-0"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- LOADER AREA -->
+                <!-- <section id="loader">
+
+                <div class="container text-center py-4">
+
+                  <p>
+
+                    <strong>Loader goes here...</strong>
+
+                  </p>
+
+                </div>
+
+              </section> -->
+                <!-- Event list (Flex) with Bootstrap 4.1. with btn -->
+                <!-- Codepen: https://codepen.io/ralitsavoronevska/pen/YdqdPK -->
+                <section class="event-list mt-3">
+                    <div class="container p-0 text-center">
+                        <ul class="flex-container d-flex flex-row flex-wrap justify-content-center p-0">
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap unit-bg rounded custom-padding border-white-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Monday</div>
+                                            <div class="day-month-container font-l font-bold">08/04</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">20:00</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(102).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(102).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 1</h2>
+                                        <p class="font-m">Event description 1</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-1.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Tuesday</div>
+                                            <div class="day-month-container font-l font-bold">16/04</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">21:30</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(103).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(103).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 2</h2>
+                                        <p class="font-m">Event description 2</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-2.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Wednesday</div>
+                                            <div class="day-month-container font-l font-bold">24/04</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">21:00</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(104).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(104).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 3</h2>
+                                        <p class="font-m">Event description 3</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-3.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Thursday</div>
+                                            <div class="day-month-container font-l font-bold">30/04</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">19:30</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(105).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(105).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 4</h2>
+                                        <p class="font-m">Event description 4</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-4.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap unit-bg rounded custom-padding border-white-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Wednesday</div>
+                                            <div class="day-month-container font-l font-bold">08/05</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">20:00</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(106).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(106).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 5</h2>
+                                        <p class="font-m">Event description 5</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-1.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Tuesday</div>
+                                            <div class="day-month-container font-l font-bold">14/05</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">21:30</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(107).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(107).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 6</h2>
+                                        <p class="font-m">Event description 6</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-2.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Thursday</div>
+                                            <div class="day-month-container font-l font-bold">23/05</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">21:00</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(108).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(108).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 7</h2>
+                                        <p class="font-m">Event description 7</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-3.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Friday</div>
+                                            <div class="day-month-container font-l font-bold">31/05</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">19:30</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(109).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(109).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 8</h2>
+                                        <p class="font-m">Event description 8</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-4.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap unit-bg rounded custom-padding border-white-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Friday</div>
+                                            <div class="day-month-container font-l font-bold">07/06</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">20:00</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(110).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(110).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 9</h2>
+                                        <p class="font-m">Event description 9</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-1.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Thursday</div>
+                                            <div class="day-month-container font-l font-bold">13/06</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">21:30</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(1).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(1).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 10</h2>
+                                        <p class="font-m">Event description 10</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-2.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Wednesday</div>
+                                            <div class="day-month-container font-l font-bold">19/06</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">21:00</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(2).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(2).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 11</h2>
+                                        <p class="font-m">Event description 11</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-3.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Tuesday</div>
+                                            <div class="day-month-container font-l font-bold">25/06</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">19:30</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(3).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(3).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 12</h2>
+                                        <p class="font-m">Event description 12</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-4.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap unit-bg rounded custom-padding border-white-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Sunday</div>
+                                            <div class="day-month-container font-l font-bold">07/07</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">20:00</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(4).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(4).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 13</h2>
+                                        <p class="font-m">Event description 13</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-1.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Saturday</div>
+                                            <div class="day-month-container font-l font-bold">13/07</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">21:30</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(5).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(5).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 14</h2>
+                                        <p class="font-m">Event description 14</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-2.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Thursday</div>
+                                            <div class="day-month-container font-l font-bold">18/07</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">21:00</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(6).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(6).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 15</h2>
+                                        <p class="font-m">Event description 15</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-3.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                                <div class="flex-item d-flex flex-row flex-wrap rounded unit-bg custom-padding border-white-2 mt-5 mt-md-2">
+                                    <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                                        <div class="date-container border-white-1 itixy-color">
+                                            <div class="day-week-container font-l font-bold">Friday</div>
+                                            <div class="day-month-container font-l font-bold">26/07</div>
+                                            <div class="year-container font-s font-bold">2019</div>
+                                            <hr>
+                                            <div class="time-container font-m font-bold">19:30</div>
+                                        </div>
+                                    </div>
+                                    <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(7).jpg"
+                                        data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(7).jpg" alt="" class="img-fluid border-white-1"></a>
+                                    </figure>
+                                    <div class="info col-sm-12 col-md-4 col-lg-5 text-center p-0">
+                                         <h2 class="font-l font-bold">Event title 16</h2>
+                                        <p class="font-m">Event description 16</p>
+                                    </div>
+                                    <div class="event-btn d-flex justify-content-center col-sm-12 col-md-2 col-lg-2"> <a href="reservation-4.html"><span class="btn-itixy d-flex justify-content-center rounded border-white-2 itixy-color font-s font-bold mb-2 mb-md-0">Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <!-- end of .overlay-inner -->
+            </div>
+            <!-- end of #overlay-body background -->
+            </div>
+            <!-- container for the #overlay-footer background -->
+            <div id="overlay-footer">
+                <!-- SITE FOOTER -->
+                <footer>
+                    <div class="container d-flex">
+                        <nav id="footer-nav" class="text-center"> <a href="#">Venues</a>
+ <a href="#">Contact Us</a>
+ <a href="#">Polices</a>
+
+                            <a
+                            href="#">Terms and Conditions</a> <a href="#">Partners</a>
+ <a href="#">FAQ's</a>
+
+                        </nav>
+                    </div>
+                </footer>
+                <!-- end of #overlay-footer background -->
+            </div>
+        </main>
+    </body>
+
+</html>

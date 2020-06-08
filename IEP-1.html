@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Krasimir Kraev">
+        <meta name="description" content="Bootstrap 4.1, Gulp, Sass, Browser-Sync!">
+        <!-- Bootstrap CDN <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+      -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i%7COpen+Sans:400,600,700&amp;subset=cyrillic"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/all.css">
+        <title>iTixy | IEP page</title>
+    </head>
+    
+    <body id="page-iep">
+        <!-- SITE HEADER -->
+        <header id="site-header">
+            <!-- MegaMenu -->
+            <div class="container-fluid" id="header-container">
+                <div id="mega-menu">
+                    <div id="headerleft"> <a href="index.html"><img src="img/logo.png" alt="itixy logo"></a>
+                    </div>
+                    <!-- logo & toggle btn -->
+                    <div id="headerright">
+                        <!-- TOPBAR -->
+                        <div id="topbar">
+                            <div class="container-fluid">
+                                <nav id="topbar-nav"> <a href="index.html">Home</a> <a href="#">Our Mission</a> <a href="#">Promo Deals</a>
+                                    <a
+                                    href="myAccount.html">My Account</a>
+                                </nav>
+                            </div>
+                        </div> <a href="#" class="toggler">
+
+            <span class="bar bar1"></span>
+
+            <span class="bar bar2"></span>
+
+            <span class="bar bar3"></span>
+
+          </a>
+                        <!-- main menu -->
+                        <div class="main-menu text-center">
+                            <ul>
+                                <li><a href="#">Music</a>
+                                </li>
+                                <li><a href="#">Theatre</a>
+                                </li>
+                                <li><a href="#">Sports</a>
+                                </li>
+                                <li><a href="#">Calendar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END headerright -->
+                </div>
+                <!-- END MegaMenu -->
+            </div>
+        </header>
+        <!-- sub menu -->
+        <div class="sub-menu-container">
+            <div class="sub-menu">
+                <!-- sub menu left col-->
+                <div class="sub-menu-left">
+                    <!--<h3 class="sub-menu-title">Sub</h3>-->
+                    <ul>
+                        <li><a href="#">Music</a>
+                        </li>
+                        <li><a href="#">Theatre</a>
+                        </li>
+                        <li><a href="#">Sports</a>
+                        </li>
+                        <li><a href="#">Cinema</a>
+                        </li>
+                        <li><a href="#">Exhibition &amp; Fashion</a>
+                        </li>
+                        <li><a href="#">Tours &amp; Festivals</a>
+                        </li>
+                        <li><a href="#">Other</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sub menu right col -->
+                <div class="sub-menu-right">
+                    <ul>
+                        <li><a href="#">Classic</a>
+                        </li>
+                        <li><a href="subcategory.html">Jazz &amp; Blues</a>
+                        </li>
+                        <li><a href="#">Rock &amp; Metal</a>
+                        </li>
+                        <li><a href="#">Pop</a>
+                        </li>
+                        <li><a href="#">RnB &amp; Hip Hop</a>
+                        </li>
+                        <li><a href="#">Latin &amp; Reggae</a>
+                        </li>
+                        <li><a href="#">Electronic &amp; Disco</a>
+                        </li>
+                        <li><a href="#">Country &amp; Folk</a>
+                        </li>
+                        <li><a href="#">Pop Folk &amp; Chanson</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END sub menu -->
+        <main>
+            <!-- container for the #overlay-body background -->
+            <div id="overlay-body">
+                <!-- container for the .overlay-inner -->
+                <div class="overlay-inner">
+                    <!-- Individual Event Page Content -->
+                    <div id="individual-event">
+                        <div class="container">
+                            <div class="row no-gutters">
+                                <!-- left side -->
+                                <div class="col-md-7">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-9 pr-0">
+                                            <div id="poster-img-1">
+                                                <!-- loaded in sass as background img in _iep.sass -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row text-center">
+                                                <div class="col col-sm-6 col-md-12 mb-1">
+                                                    <div class="date-outer">
+                                                        <div class="date-container">
+                                                            <div class="day-week-container">Wednesday</div>
+                                                            <div class="day-month-container">08/08</div>
+                                                            <div class="year-container">2018</div>
+                                                            <hr>
+                                                            <div class="time-container">20:00</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-sm-6 col-md-12 mt-1">
+                                                    <div class="event-rating">
+                                                        <p>Rating: 78%</p> <a href="#" class="thumbs-up"><span>90</span></a> <a href="#"
+                                                        class="thumbs-down"><span>30</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- section heading -->
+                                    <div class="section-heading">
+                                         <h2 class="mt-2">Next Plays:</h2>
+                                        <hr>
+                                    </div>
+                                    <!-- next plays events -->
+                                    <div id="next-plays">
+                                        <div class="row no-gutters text-center next-event mb-2">
+                                            <div class="col-md-3 plays-date">
+                                                <div class="date-outer">
+                                                    <div class="date-container">
+                                                        <div class="day-week-container">Friday</div>
+                                                        <div class="day-month-container">10/08</div>
+                                                        <div class="year-container">2018</div>
+                                                        <hr>
+                                                        <div class="time-container">20:00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 plays-desc">
+                                                <div class="center-elem"> <span>Deja Vu - Hilda Kazasyan</span>
+                                                    <br> <span>Multifunctional Sport Hall, Plovdiv</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row no-gutters text-center next-event mb-2">
+                                            <div class="col-md-3 plays-date">
+                                                <div class="date-outer">
+                                                    <div class="date-container">
+                                                        <div class="day-week-container">Monday</div>
+                                                        <div class="day-month-container">13/08</div>
+                                                        <div class="year-container">2018</div>
+                                                        <hr>
+                                                        <div class="time-container">20:00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 plays-desc">
+                                                <div class="center-elem"> <span>Deja Vu - Hilda Kazasyan</span>
+                                                    <br> <span>Multifunctional Sport Hall, Veliko Tarnovo</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row no-gutters text-center next-event mb-2">
+                                            <div class="col-md-3 plays-date">
+                                                <div class="date-outer">
+                                                    <div class="date-container">
+                                                        <div class="day-week-container">Wednesday</div>
+                                                        <div class="day-month-container">15/08</div>
+                                                        <div class="year-container">2018</div>
+                                                        <hr>
+                                                        <div class="time-container">20:00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 plays-desc">
+                                                <div class="center-elem"> <span>Deja Vu - Hilda Kazasyan</span>
+                                                    <br> <span>Night club "Deja Vu", Bourgas</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- right side -->
+                                <div class="col-md-5">
+                                    <div class="iep-wrapper">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="section-heading">
+                                                     <h2>Deja Vu - Hilda Kazasyan</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row no-gutters">
+                                            <div class="col-md-9">Night club "Deja Vu", Sofia</div>
+                                            <div class="col-md-3">Show location</div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <!-- RESUME AREA -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="iep-resume">
+                                                <p>A musical tale with Hilda Kazasyan in the theaters of Bulgaria.</p>
+                                                <p>"I'm very happy to have a dream come true, to have a long-awaited tour,
+                                                    and I can not wait to share this happiness with you, I'm waiting for you,"
+                                                    says Hilda Kazasyan for the upcoming tour.</p>
+                                                <p>A pleasant surprise awaits fans of jazz music this spring. On 9 May, Hilda
+                                                    Kazasyan, together with the musicians Hristo Yotsov, Mihail Yosifov, Zhivko
+                                                    Petrov and Milen Kukosharov, are on the long awaited national concert tour.</p>
+                                                <p>It will be carried out thanks to the support of Vivacom and UniCredit
+                                                    Bulbank and will cover 7 of the largest cities in Bulgaria. These are:
+                                                    Ruse on June 9, Burgas - June 10, Varna - June 15, Veliko Tarnovo - June
+                                                    16, Stara Zagora - June 23 and Plovdiv - June 24.</p>
+                                                <p>The final concert of the tour will be in Sofia on 29 June in the emblematic
+                                                    Satiric Theater "Aleko Konstantinov". The opening hour of all concerts
+                                                    is 19.00.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="row no-gutters">
+
+                    <div class="col-md-12 next-event-linkbar p-2">External links related to the event</div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col-md-12 next-event-tagbar p-2">Category and SubCat tags AREa</div>
+
+                  </div> --></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Individual Event Page Content -->
+                    <!-- FOOTER TOP AREA -->
+                    <div class="container">
+                        <div id="footer-top">
+                             <h2 class="section-title mt-2">Discuss on:</h2>
+                            <div class="row no-gutters">
+                                <div class="col-md-2"> <a href="#"><img src="img/instagram.png" alt=""><span>Instagram</span></a>
+                                </div>
+                                <div class="col-md-2"> <a href="#"><img src="img/twitter.png" alt=""><span>Twitter</span></a>
+                                </div>
+                                <div class="col-md-2"> <a href="#"><img src="img/pinterest.png" alt=""><span>Pinterest</span></a>
+                                </div>
+                                <div class="col-md-2"> <a href="#"><img src="img/facebook.png" alt=""><span>Facebook</span></a>
+                                </div>
+                                <!-- <div class="col-md-2"> --> <a class="btn-itixy" id="btn-iep-buy" href="reservation-1.html">Tickets</a>
+                                <!--
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of .overlay-inner -->
+                </div>
+                <!-- end of #overlay-body background -->
+            </div>
+            <!-- container for the #overlay-footer background -->
+            <div id="overlay-footer">
+                <!-- SITE FOOTER -->
+                <footer>
+                    <div class="container d-flex">
+                        <nav id="footer-nav" class="text-center"> <a href="#">Venues</a> <a href="#">Contact Us</a> <a href="#">Polices</a>
+                            <a
+                            href="#">Terms and Conditions</a> <a href="#">Partners</a> <a href="#">FAQ's</a>
+                        </nav>
+                    </div>
+                </footer>
+                <!-- end of #overlay-footer background -->
+            </div>
+        </main>
+        <!-- Optional JavaScript CDN jQuery first, then Popper.js, then Bootstrap
+        JS <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+      -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/mega-menu.js"></script>
+    </body>
+
+</html>

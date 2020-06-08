@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Krasimir Kraev">
+        <meta name="description" content="Bootstrap 4.1, Gulp, Sass, Browser-Sync!">
+        <!-- Bootstrap CDN <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+      -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i%7COpen+Sans:400,600,700&amp;subset=cyrillic"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/all.css">
+        <title>iTixy | Reservation</title>
+    </head>
+    
+    <body id="page-reservation">
+        <!-- <header id="reservation-header">
+
+
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-md-3">
+
+          <a href="#" id="logo"><img src="img/logo.png" alt="logo"></a>
+
+        </div>
+
+        <div class="col-md-9">
+
+          <h3>Payment</h3>
+
+          <button type="button" class="btn btn-secondary btn-timer">Timer + Tooltip</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </header> -->
+        <!-- SITE HEADER -->
+        <header id="site-header">
+            <!-- MegaMenu -->
+            <div class="container-fluid" id="header-container">
+                <div id="mega-menu">
+                    <div id="headerleft"> <a href="index.html"><img src="img/logo.png"></a>
+                    </div>
+                </div>
+                <!-- END MegaMenu -->
+            </div>
+        </header>
+        <main>
+            <!-- container for the #overlay-body background -->
+            <div id="overlay-body">
+                <!-- container for the .overlay-inner -->
+                <div class="overlay-inner">
+                    <div id="reservation-event">
+                        <!-- RESERVATION POSTER AREA -->
+                        <div class="container">
+                            <div id="reservation-poster">
+                                <div class="row text-center no-gutters">
+                                    <div class="date-outer col-md-2 p-2">
+                                        <div class="date-container">
+                                            <div class="day-week-container">Wednesday</div>
+                                            <div class="day-month-container">08/08</div>
+                                            <div class="year-container">2018</div>
+                                            <hr>
+                                            <div class="time-container">20:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="post-thumb col-md-10 p-2">
+                                        <div id="reservation-img-1"> <a href="IEP-1.html">
+
+                        <!-- <img src="img/reservation-1.jpg" alt=""> -->
+
+                    </a>
+                                        </div>
+                                        <div class="post-content">
+                                            <div class="post-title"> <a href="IEP-1.html">
+
+                        <h5>Deja Vu - Hilda Kazasyan</h5>
+
+                      </a>
+                                            </div>
+                                            <div class="post-desc">
+                                                <p>Night club "Deja Vu", Bourgas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- RESERVATION MAIN CONTENT -->
+                        <div class="container">
+                             <h2 class="section-title mt-2 text-left">Choose Your Tickets</h2>
+                            <div id="reservation-main-content">
+                                <div class="row no-gutters">
+                                    <!-- SEATMAP -->
+                                    <div class="col-md-8 reservation-seatmap"> <a href="#" id="reservation-back-btn">Back</a>
+                                        <div class="theatre">
+                                            <div class="cinema-seats left">
+                                                <div class="cinema-row row-1">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-2">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-3">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-4">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-5">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-6">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-7">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                            </div>
+                                            <div class="cinema-seats right">
+                                                <div class="cinema-row row-1">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-2">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-3">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-4">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-5">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-6">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                                <div class="cinema-row row-7">
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                    <div class="seat"></div>
+                                                </div>
+                                            </div>
+                                        </div> <a href="#" id="reservation-plus-btn">+ -</a>
+                                    </div>
+                                    <!-- right side -->
+                                    <div class="col-md-4" id="reservation-right-col">
+                                        <section>
+                                            <div class="table-responsive">
+                                                <table id="reservation-details-table" class="table">
+                                                    <tr>
+                                                        <td>Ticket Categories</td>
+                                                        <td>Qty</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>General ticket - 19.99 BGN</td>
+                                                        <td>
+                                                            <div>
+                                                                <input class="number" type="number" value="0"></input>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>VIP ticket - 29.99 BGN</td>
+                                                        <td>
+                                                            <div>
+                                                                <input class="number" type="number" value="0"></input>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">I have a promo code!</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div>
+                                                                <input class="col-md-12" type="text" placeholder="Insert promo code here"></input>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">Your selection</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">General ticket, Row: 2. Seat: 12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">VIP ticket, Row: 5, Seat: 18</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total</td>
+                                                        <td>Sum BGN</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>Sum EUR</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <!-- buttons bottom -->
+                                <div class="col-md-12 text-right p-0" id="down-buttons">
+                                    <button class="btn-itixy">24 hour / reservation</button>
+                                    <!-- directing to Login/Registration pop-up
+                                    --> <a class="btn-itixy" href="payment-1.html">Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of .overlay-inner -->
+                </div>
+                <!-- end of #overlay-body background -->
+            </div>
+            <!-- container for the #overlay-footer background -->
+            <div id="overlay-footer">
+                <!-- SITE FOOTER -->
+                <footer id="site-footer">
+                    <div class="container d-flex">
+                        <nav id="footer-nav" class="text-center"> <a href="#">Venues</a> <a href="#">Contact Us</a> <a href="#">Polices</a>
+                            <a
+                            href="#">Terms and Conditions</a> <a href="#">Partners</a> <a href="#">FAQ's</a>
+                        </nav>
+                    </div>
+                </footer>
+                <!-- end of #overlay-footer background -->
+            </div>
+        </main>
+        <!-- Optional JavaScript CDN jQuery first, then Popper.js, then Bootstrap
+        JS <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+              -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/reservation-seatmap.js"></script>
+    </body>
+
+</html>

@@ -1,270 +1,1140 @@
-<main>
-    <!-- container for the #overlay-body background -->
-    <div id="overlay-body">
-        <!-- container for the .overlay-inner -->
-        <div class="overlay-inner">
-            <!-- AJAX SEARCH AREA -->
-            <div id="ajax-search">
-                <div class="container">
-                    <div id="ajax-search-bar">
-                        <form action="#">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Your search">
-                                <div class="input-group-append"> <a id="btn-ajax" href="searchResults.html">Search</a>
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta name="description" content="Itixy" />
+        <meta name="web_author" content="Ralitsa Voronevska" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i%7COpen+Sans:400,600,700&amp;subset=cyrillic"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="https://www.pigno.se/barn/PIGNOSE-Calendar/dist/css/pignose.calendar.css"
+        />
+        <link rel="icon" href="./img/logo.png" />
+        <meta name="theme-color" content="#602c50" />
+        <script src="js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+        <script src="https://www.pigno.se/barn/PIGNOSE-Calendar/dist/js/pignose.calendar.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <title>iTixy | Homepage</title>
+    </head>
+    
+    <body>
+        <!-- SITE HEADER -->
+        <header id="site-header">
+            <!-- MegaMenu -->
+            <div class="container-fluid" id="header-container">
+                <div id="mega-menu">
+                    <div id="headerleft"><a href="index.html"><img src="img/logo.png" alt="logo"></a>
 
-                                </div>
-                            </div>
-                        </form>
                     </div>
-                    <!-- SECTION BOTTOM NAVBAR -->
-                    <div class="section-nav" id="site-home-search-filters-first">
-                        <div class="container-fluid text-center">
-                            <ul class="nav nav-pills mb-3 row" id="pills-home-tab" role="tablist">
-                                <li class="nav-item col-sm-12 col-md-6 col-lg-3"> <a class="nav-link btn-itixy" id="pills-home-category-tab" data-toggle="pill"
-                                    href="#pills-home-category" role="tab" aria-controls="pills-home-category"
-                                    aria-selected="false">Category</a>
+                    <!-- logo & toggle btn -->
+                    <div id="headerright">
+                        <!-- TOPBAR -->
+                        <div id="topbar">
+                            <div class="container-fluid">
+                                <nav id="topbar-nav"> <a href="index.html">Home</a>
+ <a href="#">Our Mission</a>
+ <a href="#">Promo Deals</a>
+
+                                    <a
+                                    href="myAccount.html">My Account</a>
+                                </nav>
+                            </div>
+                        </div> <a href="#" class="toggler">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                            <span class="bar bar3"></span>
+                        </a>
+
+                        <!-- main menu -->
+                        <div class="main-menu text-center">
+                            <ul>
+                                <li><a href="#">Music</a>
 
                                 </li>
-                                <li class="nav-item col-sm-12 col-md-6 col-lg-3"> <a class="nav-link btn-itixy" id="pills-home-subcategory-tab" data-toggle="pill"
-                                    href="#pills-home-subcategory" role="tab" aria-controls="pills-home-subcategory"
-                                    aria-selected="false">Subcategory</a>
+                                <li><a href="#">Theatre</a>
 
                                 </li>
-                                <li class="nav-item col-sm-12 col-md-6 col-lg-3"> <a class="nav-link active btn-itixy" id="pills-home-city-tab" data-toggle="pill"
-                                    href="#pills-home-city" role="tab" aria-controls="pills-home-city" aria-selected="false">City</a>
+                                <li><a href="#">Sports</a>
 
                                 </li>
-                                <li class="nav-item col-sm-12 col-md-6 col-lg-3"> <a class="nav-link btn-itixy" id="pills-home-dates-tab" data-toggle="pill"
-                                    href="#pills-home-dates" role="tab" aria-controls="pills-home-dates" aria-selected="false">Dates</a>
+                                <li><a href="#">Calendar</a>
 
                                 </li>
                             </ul>
-                            <div class="tab-content text-center" id="pills-tabContent">
-                                <!-- category tab -->
-                                <div class="tab-pane fade" id="pills-home-category" role="tabpanel" aria-labelledby="pills-home-category-tab">...</div>
-                                <!-- subcategory tab -->
-                                <div class="tab-pane fade" id="pills-home-subcategory" role="tabpanel"
-                                aria-labelledby="pills-home-subcategory-tab">...</div>
-                                <!-- city tab -->
-                                <div class="tab-pane fade show active" id="pills-home-city" role="tabpanel"
-                                aria-labelledby="pills-home-city-tab">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Sofia</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Plovdiv</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Varna</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Bourgas</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Ruse</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Stara Zagora</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Pleven</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Dobrich</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Sliven</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Shumen</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Pernik</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Haskovo</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Yambol</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Pazardzhik</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Blogoevgrad</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Veliko Tarnovo</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Vratsa</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Gabrovo</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Asenovgrad</a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-3"><a href="#">Vidin</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dates tab -->
-                                <div class="tab-pane fade" id="pills-home-dates" role="tabpanel" aria-labelledby="pills-home-dates-tab">
-                                    <div class="dateRangeCalendarWrapper container">
-                                        <div class="selected-date-area"> <span></span>
-
-                                        </div>
-                                        <select id="dateRangeMonthPicker">
-                                            <option value="0">January</option>
-                                            <option value="1">February</option>
-                                            <option value="2">March</option>
-                                            <option value="3">April</option>
-                                            <option value="4">May</option>
-                                            <option value="5">June</option>
-                                            <option value="6">July</option>
-                                            <option value="7">August</option>
-                                            <option value="8">September</option>
-                                            <option value="9">October</option>
-                                            <option value="10">November</option>
-                                            <option value="11">December</option>
-                                        </select>
-                                        <div id="dateRange"></div>
-                                        <button id="buttonDatePreviousWrap">&lsaquo;</button>
-                                        <button id="buttonDateNextWrap">&rsaquo;</button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
+                    <!-- END headerright -->
+                </div>
+                <!-- END MegaMenu -->
+            </div>
+        </header>
+        <!-- sub menu -->
+        <div class="sub-menu-container">
+            <div class="sub-menu">
+                <!-- sub menu left col-->
+                <div class="sub-menu-left">
+                    <!--<h3 class="sub-menu-title">Sub</h3>-->
+                    <ul>
+                        <li><a href="#">Music</a>
+
+                        </li>
+                        <li><a href="#">Theatre</a>
+
+                        </li>
+                        <li><a href="#">Sports</a>
+
+                        </li>
+                        <li><a href="#">Cinema</a>
+
+                        </li>
+                        <li><a href="#">Exhibition &amp; Fashion</a>
+
+                        </li>
+                        <li><a href="#">Tours &amp; Festivals</a>
+
+                        </li>
+                        <li><a href="#">Other</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- sub menu right col -->
+                <div class="sub-menu-right">
+                    <ul>
+                        <li><a href="#">Classic</a>
+
+                        </li>
+                        <li><a href="subcategory.html">Jazz &amp; Blues</a>
+
+                        </li>
+                        <li><a href="#">Rock &amp; Metal</a>
+
+                        </li>
+                        <li><a href="#">Pop</a>
+
+                        </li>
+                        <li><a href="#">RnB &amp; Hip Hop</a>
+
+                        </li>
+                        <li><a href="#">Latin &amp; Reggae</a>
+
+                        </li>
+                        <li><a href="#">Electronic &amp; Disco</a>
+
+                        </li>
+                        <li><a href="#">Country &amp; Folk</a>
+
+                        </li>
+                        <li><a href="#">Pop Folk &amp; Chanson</a>
+
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!-- HOT EVENTS AREA -->
-            <section id="hot-events">
-                 <h2 class="section-title text-center">Hot events</h2>
-
-                <div class="container">
-                    <div class="row no-gutters">
-                        <!-- left side -->
-                        <div class="col-md-6">
-                            <div class="hot-event hot-event-big"> <a class="btn-itixy" href="#">Buy Tickets</a>
-
-                            </div>
-                        </div>
-                        <!-- right side -->
-                        <div class="col-md-6">
-                            <div class="hot-event hot-event-small"> <a class="btn-itixy" href="#">Buy Tickets</a>
-
-                            </div>
-                            <div class="hot-event hot-event-small"> <a class="btn-itixy" href="#">Buy Tickets</a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- SECTION BOTTOM NAVBAR -->
-                    <div class="section-nav" id="site-home-search-filters-secondary">
-                        <div class="row text-center">
-                            <div class="col-sm-12 col-md-6 col-lg-2"> <a class="btn-itixy" href="#">Music</a>
-
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-2"> <a class="btn-itixy" href="#">Theatre</a>
-
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-2"> <a class="btn-itixy" href="#">Sports</a>
-
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-2"> <a class="btn-itixy" href="#">Cinema</a>
-
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-4"> <a class="btn-itixy" href="#">Tours and Festivals</a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- MONTH'S FAVORITE AREA -->
-            <section id="month-favorite">
-                <div class="container text-center">
-                     <h2 class="section-title text-center">Month's Favorite</h2>
-
-                    <div class="row no-gutters">
-                        <div class="col-md-6">
-                            <div class="month-event month-unit-1"></div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="month-event month-unit-2"></div>
-                        </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-md-6">
-                            <div class="month-event month-unit-3"></div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="month-event month-unit-4"></div>
-                        </div>
-                    </div>
-                    <div class="section-link text-center"> <a href="#">Show All</a>
-
-                    </div>
-                </div>
-            </section>
-            <!-- SITE MAGAZINE AREA -->
-            <section id="site-magazine">
-                <div class="container">
-                     <h2 class="section-title text-center">site Magazine</h2>
-
-                    <div class="row no-gutters">
-                        <div class="col-sm-12 col-md-6">
-                            <article class="magazine-unit text-center">
-                                <img src="img/magazine-1.jpg" alt="#">
-                                 <h3>Hills of Rock 2018</h3>
-
-                                 <h4>Plovdiv Rowing Canal, Plovdiv</h4>
-
-                            </article>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <article class="magazine-unit text-center">
-                                <img src="img/magazine-2.jpg" alt="#">
-                                 <h3>ZUCCHERO</h3>
-
-                                 <h4>Ancient Theatre, Plovdiv</h4>
-
-                            </article>
-                        </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-sm-12 col-md-6">
-                            <article class="magazine-unit text-center">
-                                <img src="img/magazine-3.jpg" alt="#">
-                                 <h3>Hilda Kazasyan Tour 2018</h3>
-
-                                 <h4>Home of culture, Plovdiv</h4>
-
-                            </article>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <article class="magazine-unit text-center">
-                                <img src="img/magazine-4.jpg" alt="#">
-                                 <h3>Sting</h3>
-
-                                 <h4>Ancient Theatre, Plovdiv</h4>
-
-                            </article>
-                        </div>
-                    </div>
-                    <div class="section-link text-center"> <a href="#">Read All Stories</a>
-
-                    </div>
-                </div>
-            </section>
-            <!-- ART CORNER AREA -->
-            <section id="art-corner">
-                <div class="container text-center">
-                     <h2 class="section-title text-center">Art Corner</h2>
-
-                    <div class="row no-gutters">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="art-thumb art-unit-1"></div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="art-thumb art-unit-2"></div>
-                        </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="art-thumb art-unit-3"></div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="art-thumb art-unit-4"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- end of .overlay-inner -->
         </div>
-        <!-- end of #overlay-body background -->
-    </div>
+        <!-- END sub menu -->
+        <main>
+            <!-- container for the #overlay-body background -->
+            <div id="overlay-body">
+                <!-- container for the .overlay-inner -->
+                <div class="overlay-inner">
+                    <form action="searchResults.html" method="get" class="mt-2">
+                        <div class="input-group">
+                            <label class="is-vishidden">Your search results</label>
+                            <input type="text" class="form-control rounded"
+                            name="searchQuery" placeholder="Your search..." autofocus="autofocus">
+                            <div class="input-group-append">
+                                <button class="btn-ajax rounded border-white-2" type="submit" value="Search"><span class="search-text font-bold">Search</span><i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="temp-data">
+                            <div id="search-query"></div>
+                        </div>
+                        <script>
+                            function processForm(){
+                                var parameters = location.search.substring(1).split("&");
+                                var temp = parameters[0].split("=");
+                                l = unescape(temp[0].split("+").join(" "));
+                                document.getElementById("search-query").innerHTML = l;
+                              }
+                              processForm();
+                        </script>
+                    </form>
+                    <div class="filter-menu container text-center p-0 mt-1">
+                        <ul class="nav nav-pills row" role="tablist">
+                            <li class="nav-item col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a class="nav-link active btn-itixy itixy-color rounded border-white-2 font-bold"
+                                data-toggle="pill" href="#pills-filter1-filters" role="tab" aria-controls="pills-filter1-filters"
+                                aria-selected="true">Category</a>
+                            </li>
+                            <li class="nav-item col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a class="nav-link btn-itixy itixy-color rounded border-white-2 font-bold nav-link-padding"
+                                data-toggle="pill" href="#pills-filter2-filters" role="tab" aria-controls="pills-filter2-filters"
+                                aria-selected="false">Subcategory</a>
+                            </li>
+                            <li class="nav-item col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a class="nav-link btn-itixy itixy-color rounded border-white-2 font-bold"
+                                data-toggle="pill" href="#pills-filter3-filters" role="tab" aria-controls="pills-filter3-filters"
+                                aria-selected="false">City</a>
+                            </li>
+                            <li class="nav-item col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a class="nav-link btn-itixy itixy-color rounded border-white-2 font-bold"
+                                data-toggle="pill" href="#pills-filter4-filters" role="tab" aria-controls="pills-filter4-filters"
+                                aria-selected="false">Dates</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content container p-0 mt-1" id="pills-tabContent">
+                            <!-- filter1 tab -->
+                            <div class="tab-pane fade show active" id="pills-filter1-filters" role="tabpanel"
+                            aria-labelledby="pills-filter1-filters">
+                                <div class="row p-0 m-0 text-center">
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt1</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt2</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt3</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt4</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt5</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt6</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt7</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-6 col-md-3 col-lg-3"> <a href="#">Filter1 opt8</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt9</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt10</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt11</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt12</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt13</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt14</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt15</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt16</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt17</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt18</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt19</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter1 opt20</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- filter2 tab -->
+                            <div class="tab-pane fade" id="pills-filter2-filters" role="tabpanel"
+                            aria-labelledby="pills-filter2-filters">
+                                <div class="row p-0 m-0 text-center">
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt1</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt2</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt3</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt4</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt5</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt6</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt7</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-6 col-md-3 col-lg-3"> <a href="#">Filter2 opt8</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt9</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt10</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt11</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt12</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt13</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt14</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt15</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt16</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt17</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt18</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt19</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Filter2 opt20</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- filter3 tab -->
+                            <div class="tab-pane fade" id="pills-filter3-filters" role="tabpanel"
+                            aria-labelledby="pills-filter3-filters">
+                                <div class="row p-0 m-0 text-center">
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Sofia</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Plovdiv</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Varna</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Bourgas</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Ruse</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Stara Zagora</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Pleven</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-6 col-md-3 col-lg-3"> <a href="#">Dobrich</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Sliven</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Shumen</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Pernik</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Haskovo</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Yambol</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Pazardzhik</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Blogoevgrad</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Veliko Tarnovo</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Vratsa</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Gabrovo</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Asenovgrad</a>
+                                    </div>
+                                    <div class="row-item p-0 font-bold col-xs-6 col-sm-3 col-md-3 col-lg-3"> <a href="#">Vidin</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- filter4 tab -->
+                            <div class="tab-pane fade" id="pills-filter4-filters" role="tabpanel"
+                            aria-labelledby="pills-filter4-filters">
+                                <!-- Calendar -->
+                                <!-- Original: https://codepen.io/PIGNOSE/pen/VzOpLo -->
+                                <div class="calendar row p-0 m-0"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hot events section -->
+                    <div class="container text-center carousel-wrapper p-0">
+                         <h2 class="font-bold font-xl mt-3">Hot events</h2>
+                        <!-- Mobile view - Bootstrap 4.1 Carousel inside Tabs -->
+                        <!-- https://codepen.io/ralitsavoronevska/pen/wRBqdO -->
+                        <div class="col-sm-12 col-md-12 mt-3">
+                            <nav id="carousel-categories" class="carousel slide rounded border-white-2 unit-bg"
+                            data-ride="carousel">
+                                <ul class="nav nav-pills" role="tablist">
+                                    <li class="carousel-item active font-bold font-m"><a class="flex-sm-fill text-sm-center nav-link active" href="#music" role="tab">Music</a>
+                                    </li>
+                                    <li class="carousel-item font-bold font-m"><a class="flex-sm-fill text-sm-center nav-link" href="#theatre" role="tab">Theatre</a>
+                                    </li>
+                                    <li class="carousel-item font-bold font-m"><a class="flex-sm-fill text-sm-center nav-link" href="#sports" role="tab">Sports</a>
+                                    </li>
+                                    <li class="carousel-item font-bold font-m"><a class="flex-sm-fill text-sm-center nav-link" href="#cinema" role="tab">Cinema</a>
+                                    </li>
+                                    <li class="carousel-item font-bold font-m"><a class="flex-sm-fill text-sm-center nav-link" href="#festivals" role="tab">Festivals</a>
+                                    </li>
+                                    <li class="carousel-item font-bold font-m"><a class="flex-sm-fill text-sm-center nav-link" href="#charity" role="tab">Charity</a>
+                                    </li>
+                                </ul> <a class="carousel-control-prev" href="#carousel-categories" role="button"
+                                data-slide="prev">
+
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                <span class="sr-only">Previous</span>
+
+                </a> <a class="carousel-control-next" href="#carousel-categories"
+                                role="button" data-slide="next">
+
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                <span class="sr-only">Next</span>
+
+                </a>
+                            </nav>
+                            <div class="tab-content rounded border-white-2 mt-2" id="tabContent-categories">
+                                <!-- Tabpane Music -->
+                                <div class="tab-pane active" id="music" role="tabpanel">
+                                    <div id="carousel-music" class="carousel slide rounded unit-bg" data-ride="carousel">
+                                        <div class="carousel-inner text-center">
+                                            <div class="carousel-item active mt-3">
+                                                 <h3 class="font-l font-bold">Music 1</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(1).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(1).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(2).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(2).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Music 2</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(3).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(3).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(4).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(4).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Music 3</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(5).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(5).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(6).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(6).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Music 4</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(7).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(7).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(8).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(8).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div> <a class="carousel-control-prev" href="#carousel-music" role="button"
+                                        data-slide="prev">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    <span class="sr-only">Previous</span>
+
+                    </a> <a class="carousel-control-next" href="#carousel-music"
+                                        role="button" data-slide="next">
+
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <span class="sr-only">Next</span>
+
+                    </a>
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators d-flex justify-content-center">
+                                            <li data-target="#carousel-music" data-slide-to="0" class="active secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-music" data-slide-to="1" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-music" data-slide-to="2" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-music" data-slide-to="3" class="secondary-color border-white-2 rounded-circle"></li>
+                                        </ol>
+                                        <!-- End of Indicators -->
+                                    </div>
+                                    <!-- End of #carousel-music -->
+                                </div>
+                                <!-- End of Tabpane Music -->
+                                <!-- Tabpane Theatre -->
+                                <div class="tab-pane" id="theatre" role="tabpanel">
+                                    <div id="carousel-theatre" class="carousel slide rounded unit-bg" data-ride="carousel">
+                                        <div class="carousel-inner text-center">
+                                            <div class="carousel-item active mt-3">
+                                                 <h3 class="font-l font-bold">Theatre 1</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(9).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(9).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(10).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(10).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Theatre 2</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(11).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(11).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(12).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(12).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Theatre 3</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(13).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(13).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(14).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(14).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Theatre 4</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(15).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(15).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(16).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(16).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div> <a class="carousel-control-prev" href="#carousel-theatre" role="button"
+                                        data-slide="prev">
+
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                      <span class="sr-only">Previous</span>
+
+                    </a> <a class="carousel-control-next" href="#carousel-theatre"
+                                        role="button" data-slide="next">
+
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                      <span class="sr-only">Next</span>
+
+                    </a>
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators d-flex justify-content-center">
+                                            <li data-target="#carousel-theatre" data-slide-to="0" class="active secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-theatre" data-slide-to="1" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-theatre" data-slide-to="2" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-theatre" data-slide-to="3" class="secondary-color border-white-2 rounded-circle"></li>
+                                        </ol>
+                                        <!-- End of Indicators -->
+                                    </div>
+                                    <!-- End of #carousel-theatre -->
+                                </div>
+                                <!-- End of Tabpane Theatre -->
+                                <!-- Tabpane Sports -->
+                                <div class="tab-pane" id="sports" role="tabpanel">
+                                    <div id="carousel-sports" class="carousel slide rounded unit-bg" data-ride="carousel">
+                                        <div class="carousel-inner text-center">
+                                            <div class="carousel-item active mt-3">
+                                                 <h3 class="font-l font-bold">Sports 1</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(17).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(17).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(18).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(18).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Sports 2</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(19).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(19).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(20).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(20).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Sports 3</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(21).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(21).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(22).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(22).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Sports 4</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(23).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(23).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(24).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(24).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div> <a class="carousel-control-prev" href="#carousel-sports" role="button"
+                                        data-slide="prev">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    <span class="sr-only">Previous</span>
+
+                    </a> <a class="carousel-control-next" href="#carousel-sports"
+                                        role="button" data-slide="next">
+
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <span class="sr-only">Next</span>
+
+                    </a>
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators d-flex justify-content-center">
+                                            <li data-target="#carousel-sports" data-slide-to="0" class="active secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-sports" data-slide-to="1" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-sports" data-slide-to="2" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-sports" data-slide-to="3" class="secondary-color border-white-2 rounded-circle"></li>
+                                        </ol>
+                                        <!-- End of Indicators -->
+                                    </div>
+                                    <!-- End of #carousel-sports -->
+                                </div>
+                                <!-- End of Tabpane Sports -->
+                                <!-- Tabpane Cinema -->
+                                <div class="tab-pane" id="cinema" role="tabpanel">
+                                    <div id="carousel-cinema" class="carousel slide rounded unit-bg" data-ride="carousel">
+                                        <div class="carousel-inner text-center">
+                                            <div class="carousel-item active mt-3">
+                                                 <h3 class="font-l font-bold">Cinema 1</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(25).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(25).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(26).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(26).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Cinema 2</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(27).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(27).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(28).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(28).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Cinema 3</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(29).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(29).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(30).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(30).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Cinema 4</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(31).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(31).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(32).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(32).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div> <a class="carousel-control-prev" href="#carousel-cinema" role="button"
+                                        data-slide="prev">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    <span class="sr-only">Previous</span>
+
+                    </a> <a class="carousel-control-next" href="#carousel-cinema"
+                                        role="button" data-slide="next">
+
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <span class="sr-only">Next</span>
+
+                    </a>
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators d-flex justify-content-center">
+                                            <li data-target="#carousel-cinema" data-slide-to="0" class="active secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-cinema" data-slide-to="1" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-cinema" data-slide-to="2" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-cinema" data-slide-to="3" class="secondary-color border-white-2 rounded-circle"></li>
+                                        </ol>
+                                        <!-- End of Indicators -->
+                                    </div>
+                                    <!-- End of #carousel-cinema -->
+                                </div>
+                                <!-- End of Tabpane Cinema -->
+                                <!-- Tabpane Festivals -->
+                                <div class="tab-pane" id="festivals" role="tabpanel">
+                                    <div id="carousel-festivals" class="carousel slide rounded unit-bg" data-ride="carousel">
+                                        <div class="carousel-inner text-center">
+                                            <div class="carousel-item active mt-3">
+                                                 <h3 class="font-l font-bold">Festivals 1</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(33).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(33).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(34).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(34).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Festivals 2</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(35).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(35).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(36).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(36).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Festivals 3</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(37).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(37).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(38).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(38).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Festivals 4</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(39).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(39).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(40).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(40).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div> <a class="carousel-control-prev" href="#carousel-festivals" role="button"
+                                        data-slide="prev">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    <span class="sr-only">Previous</span>
+
+                    </a> <a class="carousel-control-next" href="#carousel-festivals"
+                                        role="button" data-slide="next">
+
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <span class="sr-only">Next</span>
+
+                    </a>
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators d-flex justify-content-center">
+                                            <li data-target="#carousel-festivals" data-slide-to="0" class="active secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-festivals" data-slide-to="1" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-festivals" data-slide-to="2" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-festivals" data-slide-to="3" class="secondary-color border-white-2 rounded-circle"></li>
+                                        </ol>
+                                        <!-- End of Indicators -->
+                                    </div>
+                                    <!-- End of #carousel-festivals -->
+                                </div>
+                                <!-- End of Tabpane Festivals -->
+                                <!-- Tabpane Charity -->
+                                <div class="tab-pane" id="charity" role="tabpanel">
+                                    <div id="carousel-charity" class="carousel slide rounded unit-bg" data-ride="carousel">
+                                        <div class="carousel-inner text-center">
+                                            <div class="carousel-item active mt-3">
+                                                 <h3 class="font-l font-bold">Charity 1</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(41).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(41).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(42).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(42).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Charity 2</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(43).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(43).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(44).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(44).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Charity 3</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(45).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(45).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(46).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(46).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item mt-3">
+                                                 <h3 class="font-l font-bold">Charity 4</h3>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(47).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(47).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                                <figure class="col-sm-12 col-md-12 m-0"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(48).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(48).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div> <a class="carousel-control-prev" href="#carousel-charity" role="button"
+                                        data-slide="prev">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    <span class="sr-only">Previous</span>
+
+                    </a> <a class="carousel-control-next" href="#carousel-charity"
+                                        role="button" data-slide="next">
+
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <span class="sr-only">Next</span>
+
+                    </a>
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators d-flex justify-content-center">
+                                            <li data-target="#carousel-charity" data-slide-to="0" class="active secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-charity" data-slide-to="1" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-charity" data-slide-to="2" class="secondary-color border-white-2 rounded-circle"></li>
+                                            <li data-target="#carousel-charity" data-slide-to="3" class="secondary-color border-white-2 rounded-circle"></li>
+                                        </ol>
+                                        <!-- End of Indicators -->
+                                    </div>
+                                    <!-- End of #carousel-charity -->
+                                </div>
+                                <!-- End of Tabpane Charity -->
+                            </div>
+                            <!-- End of TabContent -->
+                        </div>
+                        <!-- End of .col-sm-12 .col-md-12 -->
+                    </div>
+                    <!-- Tablet & Desktop View - Bootstrap 4.1 Pills Gallery -->
+                    <!-- Image Gallery Grid with Bootstrap 4 Flexbox (Yogini Bende) (Initially
+                    started building from it): https://codepen.io/ms_yogi/pen/zpEXba -->
+                    <section class="hot-events rounded border-white-2 unit-bg mt-3">
+                        <div class="container text-center custom-padding">
+                            <div class="tab-content" id="tabContent">
+                                 <h2 class="font-bold font-xl">Hot events</h2>
+                                <div class="tab-pane fade show active" id="pills-music" role="tabpanel"
+                                aria-labelledby="pills-music-tab">
+                                    <div class="container p-0 text-center">
+                                         <h2 class="font-bold font-l mt-2">Music</h2>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(49).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(49).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(50).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(50).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(51).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(51).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(52).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(52).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="pills-theatre" role="tabpanel" aria-labelledby="pills-theatre-tab">
+                                    <div class="container p-0 text-center">
+                                         <h2 class="font-bold font-l mt-2">Theatre</h2>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(54).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(54).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(55).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(55).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(56).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(56).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-sports" role="tabpanel" aria-labelledby="pills-sports-tab">
+                                    <div class="container p-0 text-center">
+                                         <h2 class="font-bold font-l mt-2">Sports</h2>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(57).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(57).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(58).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(58).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(59).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(59).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(60).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(60).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-cinema" role="tabpanel" aria-labelledby="pills-cinema-tab">
+                                    <div class="container p-0 text-center">
+                                         <h2 class="font-bold font-l mt-2">Cinema</h2>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(61).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(61).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(62).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(62).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(63).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(63).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(64).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(64).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-festivals" role="tabpanel" aria-labelledby="pills-festivals-tab">
+                                    <div class="container p-0 text-center">
+                                         <h2 class="font-bold font-l mt-2">Festivals</h2>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(65).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(65).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(66).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(66).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(67).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(67).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(68).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(68).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-charity" role="tabpanel" aria-labelledby="pills-charity-tab">
+                                    <div class="container p-0 text-center">
+                                         <h2 class="font-bold font-l mt-2">Charity</h2>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(69).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(69).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(70).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(70).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(71).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(71).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(72).jpg"
+                                                    data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(72).jpg" class="img-fluid border-white-1 rounded"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container filter-pills">
+                                    <ul class="nav nav-pills row text-center" id="pills-tab" role="tablist">
+                                        <li class="nav-item p-0 col-md-2 col-lg-2"> <a class="nav-link active btn-itixy itixy-color rounded border-white-2 font-bold"
+                                            id="pills-music-tab" data-toggle="pill" href="#pills-music" role="tab"
+                                            aria-controls="pills-music" aria-selected="true">Music</a>
+                                        </li>
+                                        <li class="nav-item p-0 col-md-2 col-lg-2"> <a class="nav-link btn-itixy itixy-color rounded border-white-2 font-bold"
+                                            id="pills-theatre-tab" data-toggle="pill" href="#pills-theatre" role="tab"
+                                            aria-controls="pills-theatre" aria-selected="false">Theatre</a>
+                                        </li>
+                                        <li class="nav-item p-0 col-md-2 col-lg-2"> <a class="nav-link btn-itixy itixy-color rounded border-white-2 font-bold"
+                                            id="pills-sports-tab" data-toggle="pill" href="#pills-sports" role="tab"
+                                            aria-controls="pills-sports" aria-selected="false">Sports</a>
+                                        </li>
+                                        <li class="nav-item p-0 col-md-2 col-lg-2"> <a class="nav-link btn-itixy itixy-color rounded border-white-2 font-bold"
+                                            id="pills-cinema-tab" data-toggle="pill" href="#pills-cinema" role="tab"
+                                            aria-controls="pills-cinema" aria-selected="false">Cinema</a>
+                                        </li>
+                                        <li class="nav-item p-0 col-md-2 col-lg-2"> <a class="nav-link btn-itixy itixy-color rounded border-white-2 font-bold"
+                                            id="pills-festivals-tab" data-toggle="pill" href="#pills-festivals" role="tab"
+                                            aria-controls="pills-festivals" aria-selected="false">Festivals</a>
+                                        </li>
+                                        <li class="nav-item p-0 col-md-2 col-lg-2"> <a class="nav-link btn-itixy itixy-color rounded border-white-2 font-bold"
+                                            id="pills-charity-tab" data-toggle="pill" href="#pills-charity" role="tab"
+                                            aria-controls="pills-charity" aria-selected="false">Charity</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Month's Favourite Section -->
+                    <!-- Codepen: https://codepen.io/ralitsavoronevska/pen/mQxaqM -->
+                    <section class="months-favourite rounded border-white-2 unit-bg mt-5">
+                        <div class="container custom-padding text-center">
+                             <h2 class="font-bold font-xl">Month's Favourite</h2>
+                            <div class="d-flex flex-row flex-wrap">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(73).jpg"
+                                        data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(73).jpg" class="img-fluid border-white-1 rounded"></a>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(74).jpg"
+                                        data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(74).jpg" class="img-fluid border-white-1 rounded"></a>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row flex-wrap">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(75).jpg"
+                                        data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(75).jpg" class="img-fluid border-white-1 rounded"></a>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(76).jpg"
+                                        data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(76).jpg" class="img-fluid border-white-1 rounded"></a>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="font-bold font-m text-center mt-1 mb-2"> <a href="#" class="section-link">Show All</a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- site Magazine Section -->
+                    <!-- Codepen: https://codepen.io/ralitsavoronevska/pen/mQXrJq -->
+                    <section class="site-magazine rounded border-white-2 unit-bg mt-5">
+                        <div class="container custom-padding text-center">
+                             <h2 class="font-bold font-xl">Site Magazine</h2>
+                            <div class="d-flex flex-row flex-wrap">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <article class="d-flex flex-row flex-wrap justify-content-center m-1 mt-4 magazine-item unit-bg rounded">
+                                        <figure class="col-sm-12 col-md-12 col-lg-12 m-2 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(77).jpg"
+                                            data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(77).jpg" class="img-fluid border-white-1 rounded"></a>
+                                        </figure>
+                                        <div class="info justify-content-center m-1">
+                                             <h4 class="font-l font-bold">Event title 1</h4>
+                                            <p class="font-m">Event description 1</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <article class="d-flex flex-row flex-wrap justify-content-center m-1 mt-4 magazine-item unit-bg rounded">
+                                        <figure class="col-sm-12 col-md-12 col-lg-12 m-2 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(78).jpg"
+                                            data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(78).jpg" class="img-fluid border-white-1 rounded"></a>
+                                        </figure>
+                                        <div class="info justify-content-center m-1">
+                                             <h4 class="font-bold font-l">Event title 2</h4>
+                                            <p class="font-m">Event description 2</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row flex-wrap">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <article class="d-flex flex-row flex-wrap justify-content-center m-1 mt-4 magazine-item unit-bg rounded">
+                                        <figure class="col-sm-12 col-md-12 col-lg-12 m-2 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(79).jpg"
+                                            data-size="1600x1067"> <img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(79).jpg" class="img-fluid border-white-1 rounded"></a>
+                                        </figure>
+                                        <div class="info justify-content-center m-1">
+                                             <h4 class="font-bold font-l">Event title 3</h4>
+                                            <p class="font-m">Event description 3</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <article class="d-flex flex-row flex-wrap justify-content-center m-1 mt-4 magazine-item unit-bg rounded">
+                                        <figure class="col-sm-12 col-md-12 col-lg-12 m-2 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(80).jpg"
+                                            data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(80).jpg" class="img-fluid border-white-1 rounded"></a>
+                                        </figure>
+                                        <div class="info justify-content-center m-1">
+                                             <h4 class="font-bold font-l">Event title 4</h4>
+                                            <p class="font-m">Event description 4</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="font-bold font-m text-center mt-1 mb-2"> <a href="#" class="section-link">Read All Stories</a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Art Corner Section -->
+                    <!-- Codepen: https://codepen.io/ralitsavoronevska/pen/MzVxjE -->
+                    <section class="art-corner rounded border-white-2 unit-bg mt-5 mb-5">
+                        <div class="container custom-padding text-center">
+                             <h2 class="font-bold font-xl">Art Corner</h2>
+                            <div class="d-flex flex-row flex-wrap">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(81).jpg"
+                                        data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(81).jpg" class="img-fluid border-white-1 rounded"></a>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(82).jpg"
+                                        data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(82).jpg" class="img-fluid border-white-1 rounded"></a>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row flex-wrap mb-2">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(83).jpg"
+                                        data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(83).jpg" class="img-fluid border-white-1 rounded"></a>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <figure class="m-0 custom-padding"> <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(84).jpg"
+                                        data-size="1600x1067"><img alt="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(84).jpg" class="img-fluid border-white-1 rounded"></a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end of .overlay-inner -->
+                </div>
+                <!-- end of #overlay-body background -->
+            </div>
+            <!-- container for the #overlay-footer background -->
+            <div id="overlay-footer">
+                <!-- SITE FOOTER -->
+                <footer>
+                    <div class="container d-flex">
+                        <nav id="footer-nav" class="text-center"> <a href="#">Venues</a>
+ <a href="#">Contact Us</a>
+ <a href="#">Polices</a>
+
+                            <a
+                            href="#">Terms and Conditions</a> <a href="#">Partners</a>
+ <a href="#">FAQ's</a>
+
+                        </nav>
+                    </div>
+                </footer>
+                <!-- end of #overlay-footer background -->
+            </div>
+        </main>
+    </body>
+
+</html>
